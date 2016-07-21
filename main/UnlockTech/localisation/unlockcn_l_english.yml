@@ -204,5 +204,5 @@
   ########################## common Text ##########################
 
   # common Text
-  unlockTech.common.a:0 "确定"
+  unlockTech.common.a:0 "开启"
   unlockTech.common.b:0 "放弃"

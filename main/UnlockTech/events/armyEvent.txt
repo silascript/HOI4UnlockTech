@@ -1009,7 +1009,7 @@ country_event = {
 #--------------------------人海突击科技树--------------------------#
 
 
-#人海突击事件
+#人海突击事件 mass_assault
 country_event = {
 	id = unlockTech.event.land.1400
 	title = unlockTech.event.land.1400.t
@@ -1031,6 +1031,15 @@ country_event = {
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+
+			#如果科技已开启禁用确定按钮
+			NOT = {
+				has_tech = mass_assault 
+			}			
+		}
+
 		set_technology = {
 			mass_assault = 1
 		}
@@ -1066,10 +1075,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#口袋防御 pocket_defence
+		
 		trigger = {
-			has_tech = pocket_defence 
+			AND = {
+				#前导科技
+				#口袋防御 pocket_defence
+				has_tech = pocket_defence 
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = defence_in_depth
+				}
+
+			} # AND
+
 		}
 
 		set_technology = {
@@ -1106,10 +1125,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#纵深防御 defence_in_depth
+		
 		trigger = {
-			has_tech = defence_in_depth 
+			
+			AND = {
+				#前导科技
+				#纵深防御 defence_in_depth
+				has_tech = defence_in_depth
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = large_front_operations
+				}
+
+			} # AND
 		}
 
 		set_technology = {
@@ -1146,11 +1175,21 @@ country_event = {
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
-
-		#前导科技
-		#纵深防御 defence_in_depth
+	
 		trigger = {
-			has_tech = defence_in_depth 
+
+			AND = {
+				#前导科技
+				#纵深防御 defence_in_depth
+				has_tech = defence_in_depth
+
+				#如果科技已开启禁用确定按钮
+				NOT ={
+					has_tech = 	peoples_army
+				}
+
+			} #AND
+
 		}
 
 		set_technology = {
