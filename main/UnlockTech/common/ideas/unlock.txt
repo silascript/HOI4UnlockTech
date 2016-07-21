@@ -203,6 +203,37 @@ ideas = {
 			}
 			
 		}
+
+		#大规模强袭:				grand_assault
+		unlockTech_land_grand_assault = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1301
+			}
+		}
+
+		#大规模机械化攻势:	grand_mechanized_offensive
+		unlockTech_land_grand_mechanized_offensive = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1302
+			}
+		}
+
+
+		#步兵攻势:			infantry_offensive
+		unlockTech_land_infantry_offensive = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1303
+			}
+		}
+
+
+
 	} # unlockTech_land_3
 
 #---------------------人海突击科技树---------------------#

@@ -52,6 +52,12 @@
 
 
   unlockTech_land_trench_warfare:0 "开启战壕战"
+  unlockTech_land_grand_assault:0 "开启大规模强袭"
+  unlockTech_land_grand_mechanized_offensive:0 "开启大规模机械化攻势"
+  unlockTech_land_infantry_offensive:0 "开启步兵攻势"
+
+
+
   unlockTech_land_mass_assault:0 "开启人海突击"
 
   # navy tech
@@ -125,6 +131,12 @@
   # Trench Warfare
   unlockTech.event.land.1300.t:0 "开启战壕战科技"
   unlockTech.event.land.1300.d:0 "蹲坑打黑枪!"
+  unlockTech.event.land.1301.t:0 "开启大规模强袭科技"
+  unlockTech.event.land.1301.d:0 "一旦准备好庞大军队并明确其目标，敌人在强大攻势面前唯有坐以待毙。"
+  unlockTech.event.land.1302.t:0 "开启大规模机械化攻势科技"
+  unlockTech.event.land.1302.d:0 "摩托化部队表现尚可，但要主导攻势，需要我方机械化步兵乘坐能搭载重武器并提供乘员保护的装甲运输车辆进入战场。"
+  unlockTech.event.land.1303.t:0 "开启步兵攻势科技"
+  unlockTech.event.land.1303.d:0 "步兵的进攻精神是任何胜利的重要基石，我军一定要让步兵带头冲锋。"
 
   # Mass Assault
   unlockTech.event.land.1400.t:0 "开启人海突击科技"

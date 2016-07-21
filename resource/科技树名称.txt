@@ -42,13 +42,12 @@
 
 -------------------------战壕战科技树-------------------------
 
-	*战壕战:					trench_warfare
-		决战计划:
-			防御工事:
-				大规模强袭:
-
-
-
+	*战壕战:								trench_warfare
+		-决战计划:						grand_battle_plan
+			-防御工事:					prepared_defense
+				*大规模强袭:				grand_assault
+					*大规模机械化攻势:	grand_mechanized_offensive
+					*步兵攻势:			infantry_offensive
 
 -------------------------人海突击科技树-------------------------
 

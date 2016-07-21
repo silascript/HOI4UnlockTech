@@ -843,9 +843,6 @@ country_event = {
 }
 
 
-
-
-
 #--------------------------战壕战科技树--------------------------#
 
 
@@ -857,12 +854,14 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+		AI = NO
 	}
 
 	#移除战壕战idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_land_trench_warfare
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_trench_warfare
+		}
 	}
 
 	#确定按钮及开启科技
@@ -879,6 +878,132 @@ country_event = {
 		name = unlockTech.event.common.b
 	}	
 }
+
+
+#大规模强袭:				grand_assault
+country_event = {
+	id = unlockTech.event.land.1301 
+	title = unlockTech.event.land.1301.t 
+	desc = unlockTech.event.land.1301.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除大规模强袭idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_grand_assault
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#防御工事 prepared_defense
+		trigger = {
+			has_tech =  prepared_defense
+		}
+
+		set_technology = {
+			grand_assault = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#大规模机械化攻势:	grand_mechanized_offensive
+country_event = {
+	id = unlockTech.event.land.1302 
+	title = unlockTech.event.land.1302.t 
+	desc = unlockTech.event.land.1302.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除大规模机械化攻势idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_grand_mechanized_offensive
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#大规模强袭
+		trigger = {
+			has_tech = grand_assault 
+		}
+
+		set_technology = {
+			grand_mechanized_offensive = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#步兵攻势:			infantry_offensive
+country_event = {
+	id = unlockTech.event.land.1303 
+	title = unlockTech.event.land.1303.t 
+	desc = unlockTech.event.land.1303.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除步兵攻势idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_infantry_offensive
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#大规模强袭
+		trigger = {
+			has_tech = grand_assault 
+		}
+
+		set_technology = {
+			infantry_offensive = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+
 
 
 #--------------------------人海突击科技树--------------------------#
