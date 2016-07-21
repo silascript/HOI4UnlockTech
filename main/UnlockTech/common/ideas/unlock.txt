@@ -1,0 +1,373 @@
+
+ideas = {
+
+################################陆军################################
+
+#---------------------机动作战科技树---------------------#	
+	#开启陆军科技	
+	unlockTech_land_1 = {
+
+		#机动作战:		mobile_warfare
+		unlockTech_land_mobile_warfare = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1100
+			}				
+		}
+
+		#迟滞:			Delay
+		unlockTech_land_Delay = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1101
+			}
+		}
+
+		#弹性防御:		Elastic Defence
+		unlockTech_land_Elastic_Defence = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1102
+			}
+		}
+
+		#机动步兵:		Mobile Infantry
+		unlockTech_land_Mobile_Infantry = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1103
+			}
+		}
+
+		#装甲先锋:		Armored Spearhead
+		unlockTech_land_Armored_Spearhead = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1104
+			}
+		}
+
+		#机械化攻势:		Mechanized Offensive
+		unlockTech_land_Mechanized_Offensive = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1105
+			}
+		}
+
+		#闪电战:			Blitzkrieg
+		unlockTech_land_Blitzkrieg = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1106
+			}
+		}
+
+		#战斗群（前置科技:机械化攻势或闪电战）:		Kampfgruppe
+		unlockTech_land_Kampfgruppe = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1107
+			}
+		}
+
+		#国民突击队:		Volkssturm
+		unlockTech_land_Volkssturm = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1108
+			}
+		}
+
+		#战场救火队:		Fire Brigades
+		unlockTech_land_Fire_Brigades = {
+			picture = generic_infantry_bonus
+			on_add = {
+				country_event = unlockTech.event.land.1109
+			}
+		}
+
+
+
+	} # unlockTech_land_1
+
+#---------------------优势火力科技树---------------------#
+
+	unlockTech_land_2 = {
+
+		#优势火力:		superior_firepower
+		unlockTech_land_superior_firepower = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1200
+			}
+			
+		}
+
+		#迟滞:			sup_delay
+		unlockTech_land_sup_delay = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1201
+			}
+			
+		}
+
+		#机动防御:		mobile_defence
+		unlockTech_land_mobile_defence = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1202
+			}
+		}
+
+		#分散支援:			dispersed_support
+		unlockTech_land_dispersed_support = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1203
+			}
+		}
+
+		#协调支援:			intergrated_support
+		unlockTech_land_intergrated_support = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1204
+			}
+		}
+
+		#压倒性火力:			overwhelming_firepower
+		unlockTech_land_overwhelming_firepower = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1205
+			}
+		}
+
+		#团级战斗队:			regimental_combat_teams
+		unlockTech_land_regimental_combat_teams = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1206
+			}
+		}
+
+		#机械化攻势:			sup_mechanized_offensive
+		unlockTech_land_sup_mechanized_offensive = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1207
+			}
+		}
+
+		#集中火力计划:		concentrated_fire_plans	
+		unlockTech_land_concentrated_fire_plans = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1208
+			}
+		}
+
+		#集中火力管制:		centralized_fire_control
+		unlockTech_land_centralized_fire_control = {
+			picture = generic_infantry_bonus
+
+			on_add ={
+				country_event = unlockTech.event.land.1209
+			}	
+		}
+
+
+	} # unlockTech_land_2
+
+#---------------------战壕战科技树---------------------#
+
+	unlockTech_land_3 = {
+
+		#战壕战:		trench_warfare
+		unlockTech_land_trench_warfare = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1300
+			}
+			
+		}
+	} # unlockTech_land_3
+
+#---------------------人海突击科技树---------------------#
+	
+	unlockTech_land_4 ={
+		#人海突击:	mass_assault	
+		unlockTech_land_mass_assault = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1400
+			}
+			
+		}
+	
+	} # unlockTech_land_4
+
+
+################################海军################################
+
+#---------------------海军存在舰队科技树---------------------#
+
+
+	#存在舰队科技树
+	unlockTech_navy_1 = {
+
+		#存在舰队:		fleet_in_being
+		unlockTech_navy_fleet_in_being = {
+			picture = generic_navy_bonus
+
+			on_add = {
+				country_event = unlockTech.event.navy.2100
+			}
+		}
+	} # unlockTech_navy_1
+
+#---------------------海军贸易阻断科技树---------------------#
+	
+	#贸易阻断科技树
+	unlockTech_navy_2 = {
+
+		#贸易阻断:		trade_interdiction
+		unlockTech_navy_trade_interdiction = {
+			picture = generic_navy_bonus
+
+			on_add = {
+				country_event = unlockTech.event.navy.2200
+			}
+		}
+	} # unlockTech_navy_2
+
+#---------------------海军基地打击科技树---------------------#
+	
+	#基地打击科技树
+	unlockTech_navy_3 = {
+		#基地打击:		base_strike
+		unlockTech_navy_base_strike = {
+			picture = generic_navy_bonus
+
+			on_add = {
+				country_event = unlockTech.event.navy.2300
+			}
+		}
+
+	} # unlockTech_navy_3
+
+################################空军################################
+
+#---------------------空军空中优势科技树---------------------#
+
+	#空中优势科技树
+	unlockTech_air_1 = {
+
+		#空中优势:		air_superiority
+		unlockTech_air_air_superiority = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3100
+			}
+		}
+	} # unlockTech_air_1
+
+#---------------------空军编队飞行科技树---------------------#
+	
+	#编队飞行科技树
+	unlockTech_air_2 = {
+		#编队飞行:		formation_flying
+		unlockTech_air_formation_flying = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3200
+			}
+		}
+	} # unlockTech_air_2
+
+#---------------------空军部队轮换科技树---------------------#
+	
+	#部队轮换科技树
+	unlockTech_air_3 = {
+
+		#部队轮换:		force_rotation
+		unlockTech_air_force_rotation = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3300
+			}
+		}
+
+	} # unlockTech_air_3
+
+
+################################工业################################
+
+
+	#开启工业科技
+	unlockTech_industry_1 = {
+	
+		#集中型工业:			concentrated_industry
+		unlockTech_concentrated_industry = {
+			picture = FRA_motorized_focus
+
+			on_add = {
+				country_event = unlockTech.event.industry.9100 
+			}
+						
+		} # unlockTech_industry_concentrated_industry
+
+
+		#分散型工业:			dispersed_industry
+		unlockTech_dispersed_industry = {
+			picture = generic_production_bonus
+
+			on_add = {
+				country_event = unlockTech.event.industry.9101
+			}
+		}
+
+
+		#一体化生产线:		streamlined_line
+		unlockTech_streamlined_line = {
+			picture = generic_intel_bonus
+
+			on_add = {
+				country_event = unlockTech.event.industry.9102
+			}
+		}
+
+
+		#柔性生产线:			flexible_line
+		unlockTech_flexible_line = {
+			picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.industry.9103
+			}
+		} #开启工业科技 unlockTech_industry_1
+
+	}
+################################################################
+
+
+} 
+
+
+

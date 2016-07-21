@@ -1,0 +1,11 @@
+idea_categories = {
+	UnlockTech_Air_idea = {
+
+		slot = unlockTech_air_1
+		slot = unlockTech_air_2
+		slot = unlockTech_air_3
+
+		cost = 0
+		removal_cost = 0
+	}	
+}

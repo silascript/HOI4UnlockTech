@@ -1,0 +1,9 @@
+idea_categories = {
+	UnlockTech_Industry_idea = {
+
+		slot = unlockTech_industry_1
+
+		cost = 0
+		removal_cost = 0
+	}	
+}

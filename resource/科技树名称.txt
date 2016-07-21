@@ -1,0 +1,100 @@
+
+科技树名称
+
+*: 关键科技 其科技下有一支科技分支
+-: 非关键科技但是关键科技的前置科技 开启关键科技的条件
+
+///////////////////////////////陆军///////////////////////////////
+
+陆军：
+
+-------------------------机动作战科技树-------------------------
+
+	*机动作战:								mobile_warfare
+		-迟滞:								Delay
+			*弹性防御:						Elastic Defence
+				*机动步兵:					Mobile Infantry
+					-机械化攻势:				Mechanized Offensive
+
+				*装甲先锋:					Armored Spearhead
+					-闪电战:					Blitzkrieg	
+
+	*战斗群（前置科技:机械化攻势或闪电战）:		Kampfgruppe
+		*国民突击队:							Volkssturm
+
+		*战场救火队:							Fire Brigades
+
+-------------------------优势火力科技树-------------------------
+
+	*优势火力:								superior_firepower
+		-迟滞:								sup_delay
+			*机动防御:						mobile_defence
+				*分散支援:					dispersed_support
+					-压倒性火力:				overwhelming_firepower
+
+				*协调支援:					intergrated_support
+					-团级战斗队:				regimental_combat_teams
+
+		*机械化攻势(前置科技: 压倒性火力 或 团级战斗队): sup_mechanized_offensive
+			*集中火力计划:					concentrated_fire_plans
+
+			*集中火力管制:					centralized_fire_control
+
+-------------------------战壕战科技树-------------------------
+
+	*战壕战:					trench_warfare
+		决战计划:
+			防御工事:
+				大规模强袭:
+
+
+
+
+-------------------------人海突击科技树-------------------------
+
+	人海突击:				mass_assault
+
+
+///////////////////////////////海军///////////////////////////////
+
+
+海军:
+
+	存在舰队:				fleet_in_being
+
+	贸易阻断:				trade_interdiction
+
+	基地打击:				base_strike
+
+
+///////////////////////////////空军///////////////////////////////
+
+
+空军:
+
+	空中优势:				air_superiority
+
+	编队飞行:				formation_flying
+
+	部队轮换:				force_rotation 
+
+
+///////////////////////////////工业///////////////////////////////
+
+工业:
+
+	集中分散工业前置科技:
+		基础机床:			basic_machine_tools	
+		
+	集中型工业:				concentrated_industry
+	分散型工业:				dispersed_industry
+
+
+	一体化及柔性生产线的前置科技:
+		流水线生产:			assembly_line_production
+
+	一体化生产线:				streamlined_line
+	柔性生产线:				flexible_line
+
+	
+

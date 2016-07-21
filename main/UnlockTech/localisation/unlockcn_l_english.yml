@@ -1,0 +1,185 @@
+﻿l_english:
+
+  ########################## idea Text ##########################
+  
+  #各支科技树标题
+  #UnlockTech_idea:0 "开启科技"
+  UnlockTech_Land_idea:0 "开启陆军科技"
+  UnlockTech_Navy_idea:0 "开启海军科技"
+  UnlockTech_Air_idea:0 "开启空军科技"
+  UnlockTech_Industry_idea:0 "开启工业科技"
+
+  unlockTech_land_1:0 "开启陆军机动作战科技"
+  unlockTech_land_2:0 "开启陆军优势火力科技"
+  unlockTech_land_3:0 "开启陆军战壕战科技"
+  unlockTech_land_4:0 "开启陆军人海战术科技"
+
+  unlockTech_navy_1:0 "开启海军存在舰队科技"
+  unlockTech_navy_2:0 "开启海军贸易阻断科技"
+  unlockTech_navy_3:0 "开启海军基地打击科技"
+
+  unlockTech_air_1:0 "开启空军空中优势科技"
+  unlockTech_air_2:0 "开启空军编队飞行科技"
+  unlockTech_air_3:0 "开启空军部队轮换科技"
+
+  unlockTech_industry_1:0 "开启工业科技"
+  
+  
+  #科技项标题
+  # land tech
+  unlockTech_land_mobile_warfare:0 "开启机动作战"
+  unlockTech_land_Delay:0 "迟滞"
+  unlockTech_land_Elastic_Defence:0 "弹性防御"
+  unlockTech_land_Mobile_Infantry:0 "机动步兵"
+  unlockTech_land_Armored_Spearhead:0 "装甲先锋"
+  unlockTech_land_Mechanized_Offensive:0 "机械化攻势"
+  unlockTech_land_Blitzkrieg:0 "闪电战"
+  unlockTech_land_Kampfgruppe:0 "战斗群"
+  unlockTech_land_Volkssturm:0 "国民突击队"
+  unlockTech_land_Fire_Brigades:0 "战场救火队"
+
+
+  unlockTech_land_superior_firepower:0 "开启优势火力"
+  unlockTech_land_sup_delay:0 "迟滞"
+  unlockTech_land_mobile_defence:0 "机动防御"
+  unlockTech_land_dispersed_support:0 "分散支援"
+  unlockTech_land_intergrated_support:0 "协调支援"
+  unlockTech_land_overwhelming_firepower:0 "压倒性火力"
+  unlockTech_land_regimental_combat_teams:0 "团级战斗队"
+  unlockTech_land_sup_mechanized_offensive:0 "机械化攻势"
+  unlockTech_land_concentrated_fire_plans:0 "集中火力计划"
+  unlockTech_land_centralized_fire_control:0 "集中火力管制"
+
+
+  unlockTech_land_trench_warfare:0 "开启战壕战"
+  unlockTech_land_mass_assault:0 "开启人海突击"
+
+  # navy tech
+  unlockTech_navy_fleet_in_being:0 "开启存在舰队"
+  unlockTech_navy_trade_interdiction:0 "开启贸易阻断"
+  unlockTech_navy_base_strike:0 "开启基地打击"
+
+  #air tech
+  unlockTech_air_air_superiority:0 "开启空中优势"
+  unlockTech_air_formation_flying:0 "开启编队飞行"
+  unlockTech_air_force_rotation:0 "开启部队轮换"
+
+  #industry tech
+  unlockTech_concentrated_industry:0 "开启集中型工业"
+  unlockTech_dispersed_industry:0 "开启分散型工业"
+  unlockTech_streamlined_line:0 "开启一体化生产线"
+  unlockTech_flexible_line:0 "开启柔性生产线"
+
+  ########################## event Text ##########################
+  unlockTech.event.common.a:0 "确定"
+  unlockTech.event.common.b:0 "放弃"
+
+  # ------------------------ land event ------------------------ #
+  #unlockTech.event.land.t:0 "开启陆军科技"
+  
+
+  # Mobile Warfare
+  unlockTech.event.land.1100.t:0 "开启机动作战科技"
+  unlockTech.event.land.1100.d:0 "打一枪换一个地方。"
+  unlockTech.event.land.1101.t:0 "开启迟滞科技"
+  unlockTech.event.land.1101.d:0 "专职拖后腿!"
+  unlockTech.event.land.1102.t:0 "开启弹性防御科技"
+  unlockTech.event.land.1102.d:0 "弹性防御又名机动防御，是运动战处于防御形态下的一种积极战略。善于利用战场空间和时间因素，指挥部队快速机动和集中兵力。在进攻中， 以装甲部队为突击群，趁敌犹豫不决和混乱之机，冒着暴露侧翼和后方的危险， 大胆穿插迂回，攻击敌人翼侧和后方， 从而瓦解敌整个防御，而步兵则在正面实施牵制行动，在抗击敌优势坦克的反冲击时，常以防御行动并使用高射炮平射打坦克的手段挫败对手， 而后转入反攻，在城镇攻坚战中， 一般以步兵先行突破， 而后投入坦克。当敌溃退时， 即以坦克不停顿地追击来发展胜利，在防御战役中， 通常将装甲部队作为预备队， 对突入之敌实施反冲击或反击。在退却时， 则以机动防御迟滞对方追击。"
+  unlockTech.event.land.1103.t:0 "开启机动步兵科技"
+  unlockTech.event.land.1103.d:0 "面对高速挺进的装甲部队，常规步兵跟进不及，反应迟钝，逃脱亦无能。能够跟上现代战争步伐的摩托化/机械化步兵应运而生。"
+  unlockTech.event.land.1104.t:0 "开启装甲先锋科技"
+  unlockTech.event.land.1104.d:0 "要让坦克充分发挥潜能，就不能使其局限于步兵支援，应将其组成独立高机动单位担任进攻先锋。\n\n"
+  unlockTech.event.land.1105.t:0 "开启机械化攻势科技"
+  unlockTech.event.land.1105.d:0 "摩托化部队表现尚可，但要主导攻势，需要我方机械化步兵乘坐能搭载重武器并提供乘员保护的装甲运输车辆进入战场。"
+  unlockTech.event.land.1106.t:0 "开启闪电战科技"
+  unlockTech.event.land.1106.d:0 "闪电战，是指在机动步兵和空军支援下的快速装甲部队突破、包围并瓦解敌军的战略。"
+  unlockTech.event.land.1107.t:0 "开启战斗群科技"
+  unlockTech.event.land.1107.d:0 "战斗群是指为完成一项特定任务而临时编制的混成部队。"
+  unlockTech.event.land.1108.t:0 "开启国民突击队科技"
+  unlockTech.event.land.1108.d:0 "国民突击队是由老人、儿童及其他不符合常规服役要求的人群组成的军队。\n\n"
+  unlockTech.event.land.1109.t:0 "开启战场救火队科技"
+  unlockTech.event.land.1109.d:0 "战场救火队是指为应对敌方突破或其他紧急战况而匆忙拼凑的部队。\n\n"
+
+  # Superior Firepower
+  unlockTech.event.land.1200.t:0 "开启优势火力科技"
+  unlockTech.event.land.1200.d:0 "我们就是多打少!"
+  unlockTech.event.land.1201.t:0 "开启迟滞科技"
+  unlockTech.event.land.1201.d:0 "能拖多久就拖多久!"
+  unlockTech.event.land.1202.t:0 "开启机动防御科技"
+  unlockTech.event.land.1202.d:0 "机动预备队能驰援任何遭敌攻击的防线。"
+  unlockTech.event.land.1203.t:0 "开启分散支援科技"
+  unlockTech.event.land.1203.d:0 "将支援单位在前线后方分散开来能够覆盖更大的范围，增强单位的防御能力。\n\n"
+  unlockTech.event.land.1204.t:0 "开启协调支援科技"
+  unlockTech.event.land.1204.d:0 "将支援部队和战斗部队更紧密的结合在一起能够提高单位的进攻能力。"
+  unlockTech.event.land.1205.t:0 "开启压倒性火力科技"
+  unlockTech.event.land.1205.d:0 "将所有支援单位的火力集中在一点上能够有效地击溃敌方防御，或压制敌方进攻。"
+  unlockTech.event.land.1206.t:0 "开启团级战斗队科技"
+  unlockTech.event.land.1206.d:0 "团级战斗队是指与炮兵、坦克、侦察兵紧密结合的团级步兵单位，这样就形成了在进攻行动中更加灵活的自立单位。"
+  unlockTech.event.land.1207.t:0 "开启机械化攻势科技" 
+  unlockTech.event.land.1207.d:0 "摩托化部队表现尚可，但要主导攻势，需要我方机械化步兵乘坐能搭载重武器并提供乘员保护的装甲运输车辆进入战场。" 
+  unlockTech.event.land.1208.t:0 "开启集中火力计划科技"
+  unlockTech.event.land.1208.d:0 "将不同炮兵阵地火力协调并同步炮击能对敌方造成更大杀伤。"
+  unlockTech.event.land.1209.t:0 "开启集中火力管制科技"
+  unlockTech.event.land.1209.d:0 "集中的火力管制系统使炮兵支援只需要一次评估就能将全师的火力投射到一点上，而不是每个单位都只能请求其所属的炮兵支援。"
+
+  # Trench Warfare
+  unlockTech.event.land.1300.t:0 "开启战壕战科技"
+  unlockTech.event.land.1300.d:0 "蹲坑打黑枪!"
+
+  # Mass Assault
+  unlockTech.event.land.1400.t:0 "开启人海突击科技"
+  unlockTech.event.land.1400.d:0 "努力生孩子壮大我们的部队吧！"
+
+  # ------------------------ navy event ------------------------ #
+  #unlockTech.event.navy.t:0 "开启海军科技"
+
+  #存在舰队:    fleet in being
+  unlockTech.event.navy.2100.t:0 "开启存在舰队科技"
+  unlockTech.event.navy.2100.d:0 "激活开启存在舰队科技。"
+
+  #贸易阻断:   trade interdiction
+  unlockTech.event.navy.2200.t:0 "开启贸易阻断科技"
+  unlockTech.event.navy.2200.d:0 "激活开启贸易阻断科技。"
+
+  #基地打击:   base strike 
+  unlockTech.event.navy.2300.t:0 "开启基地打击科技"
+  unlockTech.event.navy.2300.d:0 "激活开启基地打击科技。"
+
+  # ------------------------- air event ------------------------ #
+  #unlockTech.event.air.t:0 "开启空军科技"
+  
+  #空中优势:    air_superiority
+  unlockTech.event.air.3100.t:0 "开启空中优势科技"
+  unlockTech.event.air.3100.d:0 "激活开启空中优势科技"
+
+  #编队飞行:   formation_flying
+  unlockTech.event.air.3200.t:0 "开启编队飞行科技"
+  unlockTech.event.air.3200.d:0 "激活开启编队飞行科技"
+
+  #部队轮换:   force_rotation
+  unlockTech.event.air.3300.t:0 "开启部队轮换科技"
+  unlockTech.event.air.3300.d:0 "激活开启部队轮换科技"
+
+
+  # ---------------------- industry event ---------------------- #
+  #unlockTech.event.industry.t:0 "开启工业科技"
+
+  unlockTech.event.industry.9100.t:0 "开启集中型工业科技"
+  unlockTech.event.industry.9100.d:0 "激活开启集中型工业科技"
+
+  
+  unlockTech.event.industry.9101.t:0 "开启分散型工业科技"
+  unlockTech.event.industry.9101.d:0 "激活开启分散型工业科技"
+
+  unlockTech.event.industry.9102.t:0 "开启一体化生产线科技"
+  unlockTech.event.industry.9102.d:0 "激活开启一体化生产线科技"
+
+  unlockTech.event.industry.9103.t:0 "开启柔性生产线科技"
+  unlockTech.event.industry.9103.d:0 "激活开启柔性生产线科技"
+
+
+  ########################## common Text ##########################
+
+  # common Text
+  unlockTech.common.a:0 "确定"
+  unlockTech.common.b:0 "放弃"

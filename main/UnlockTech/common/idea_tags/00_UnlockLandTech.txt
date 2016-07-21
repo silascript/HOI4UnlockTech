@@ -1,0 +1,16 @@
+idea_categories = {
+	UnlockTech_Land_idea = {
+		#slot = unlockTech_land
+		#slot = unlockTech_navy
+		#slot = unlockTech_air
+		#slot = unlockTech_industry
+
+		slot = unlockTech_land_1
+		slot = unlockTech_land_2
+		slot = unlockTech_land_3
+		slot = unlockTech_land_4
+
+		cost = 0
+		removal_cost = 0
+	}	
+}

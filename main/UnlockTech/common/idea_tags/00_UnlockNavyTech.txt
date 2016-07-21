@@ -1,0 +1,11 @@
+idea_categories = {
+	UnlockTech_Navy_idea = {
+
+		slot = unlockTech_navy_1
+		slot = unlockTech_navy_2
+		slot = unlockTech_navy_3
+
+		cost = 0
+		removal_cost = 0
+	}	
+}

@@ -1,0 +1,920 @@
+add_namespace = unlockTech.event.land
+
+
+##############################军事###############################
+# 陆军:1x
+# 海军:2x
+# 空军:3x
+
+
+############################## 陆军 ##############################
+
+#--------------------------机动作战科技树--------------------------#
+
+
+#机动作战根科技事件
+country_event = {
+	id = unlockTech.event.land.1100
+	title = unlockTech.event.land.1100.t 
+	desc = unlockTech.event.land.1100.d 
+
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除机动作战idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_mobile_warfare
+		}
+	}
+	
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			mobile_warfare = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+
+}
+
+#滞后科技事件
+country_event = {
+	id = unlockTech.event.land.1101
+	title = unlockTech.event.land.1101.t 
+	desc = unlockTech.event.land.1101.d 
+
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除滞后idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Delay
+		}
+	}
+	
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		trigger = {
+			has_tech = mobile_warfare
+		}
+
+		set_technology = {
+			delay = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+
+}
+
+#弹性防御:	Elastic Defence
+country_event = {
+	id = unlockTech.event.land.1102
+	title = unlockTech.event.land.1102.t 
+	desc = unlockTech.event.land.1102.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除弹性防御idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Elastic_Defence 
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		trigger = {
+			has_tech = delay
+		}
+
+		set_technology = {
+			elastic_defence = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+
+}
+
+#机动步兵:	Mobile Infantry
+country_event = {
+	id = unlockTech.event.land.1103
+	title = unlockTech.event.land.1103.t 
+	desc = unlockTech.event.land.1103.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除机动步兵idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Mobile_Infantry 
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#弹性防御
+		trigger = {
+			has_tech = elastic_defence
+		}
+
+		set_technology = {
+			mobile_infantry = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#装甲先锋:	Armored Spearhead
+country_event = {
+	id = unlockTech.event.land.1104
+	title = unlockTech.event.land.1104.t 
+	desc = unlockTech.event.land.1104.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除装甲先锋idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Armored_Spearhead 
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#弹性防御
+		trigger = {
+			has_tech = elastic_defence
+		}
+
+		set_technology = {
+			armored_spearhead = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+}
+
+#机械化攻势:	Mechanized Offensive
+country_event = {
+	id = unlockTech.event.land.1105
+	title = unlockTech.event.land.1105.t 
+	desc = unlockTech.event.land.1105.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除机械化攻势idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Mechanized_Offensive
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#大规模摩托化
+		trigger = {
+			has_tech = mass_motorization
+		}
+
+		set_technology = {
+			mechanised_offensive = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+}
+
+#闪电战:		Blitzkrieg
+country_event = {
+	
+	id = unlockTech.event.land.1106
+	title = unlockTech.event.land.1106.t 
+	desc = unlockTech.event.land.1106.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除闪电战idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Blitzkrieg
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#重点突破战术Schwerpunk
+		trigger = {
+			has_tech = schwerpunk
+		}
+
+		set_technology = {
+			blitzkrieg = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+#战斗群:		Kampfgruppe
+country_event = {
+	id = unlockTech.event.land.1107
+	title = unlockTech.event.land.1107.t 
+	desc = unlockTech.event.land.1107.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除战斗群idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Kampfgruppe
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#前置科技:机械化攻势或闪电战
+		trigger = {
+			OR ={
+				has_tech = mechanised_offensive
+				has_tech = blitzkrieg
+			}
+			
+		}
+
+		set_technology = {
+			kampfgruppe = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+}
+
+
+#国民突击队:	Volkssturm
+country_event = {
+	id = unlockTech.event.land.1108
+	title = unlockTech.event.land.1108.t 
+	desc = unlockTech.event.land.1108.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除国民突击队idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Volkssturm 
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#战斗群
+		trigger = {			
+			has_tech = kampfgruppe
+		}
+
+		set_technology = {
+			volkssturm = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+}
+
+#战场救火队:	Fire Brigades
+country_event = {
+	id = unlockTech.event.land.1109
+	title = unlockTech.event.land.1109.t 
+	desc = unlockTech.event.land.1109.d 
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除战场救火队idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_Fire_Brigades 
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#战斗群
+		trigger = {			
+			has_tech = kampfgruppe
+		}
+
+		set_technology = {
+			firebrigades = 1	
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+}
+
+
+#--------------------------优势火力科技树--------------------------#
+
+#优势火力事件
+country_event = {
+	id = unlockTech.event.land.1200
+	title = unlockTech.event.land.1200.t
+	desc = unlockTech.event.land.1200.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除优势火力idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_superior_firepower
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			superior_firepower = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#迟滞:	sup_delay
+country_event = {
+	id = unlockTech.event.land.1201 
+	title = unlockTech.event.land.1201.t 
+	desc = unlockTech.event.land.1201.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除迟滞idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_sup_delay
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#优势火力
+		trigger = {
+			has_tech = superior_firepower
+		}
+
+		set_technology = {
+			sup_delay = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+
+}
+
+#机动防御: 		mobile_defence
+country_event = {
+	id = unlockTech.event.land.1202 
+	title = unlockTech.event.land.1202.t 
+	desc = unlockTech.event.land.1202.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除机动防御idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_mobile_defence
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#迟滞
+		trigger = {
+			has_tech = sup_delay 
+		}
+
+		set_technology = {
+			mobile_defence = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#分散支援: 		dispersed_support
+country_event = {
+	id = unlockTech.event.land.1203 
+	title = unlockTech.event.land.1203.t 
+	desc = unlockTech.event.land.1203.d
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除分散支援idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_dispersed_support
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#机动防御
+		trigger = {
+			has_tech = mobile_defence 
+		}
+
+		set_technology = {
+			dispersed_support = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#协调支援:		intergrated_support
+country_event = {
+	id = unlockTech.event.land.1204
+	title = unlockTech.event.land.1204.t 
+	desc = unlockTech.event.land.1204.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除协调支援idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_intergrated_support
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#机动防御
+		trigger = {
+			has_tech =  mobile_defence
+		}
+
+		set_technology = {
+			intergrated_support = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#压倒性火力:		overwhelming_firepower	
+country_event = {
+	id = unlockTech.event.land.1205 
+	title = unlockTech.event.land.1205.t 
+	desc = unlockTech.event.land.1205.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除压倒性火力idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_overwhelming_firepower
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#分散支援 dispersed_support
+		trigger = {
+			has_tech = dispersed_support 
+		}
+
+		set_technology = {
+			overwhelming_firepower = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#团级战斗队:		regimental_combat_teams
+country_event = {
+	id = unlockTech.event.land.1206 
+	title = unlockTech.event.land.1206.t 
+	desc = unlockTech.event.land.1206.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除团级战斗队idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_regimental_combat_teams
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#协调支援 intergrated_support
+		trigger = {
+			has_tech = intergrated_support 
+		}
+
+		set_technology = {
+			regimental_combat_teams = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#机械化攻势:		sup_mechanized_offensive
+country_event = {
+	id = unlockTech.event.land.1207 
+	title = unlockTech.event.land.1207.t 
+	desc = unlockTech.event.land.1207.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_sup_mechanized_offensive
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#压倒性火力 overwhelming_firepower
+		#或
+		#团级战斗队regimental_combat_teams
+		trigger = {
+			OR = {
+				has_tech = overwhelming_firepower
+				has_tech =  regimental_combat_teams
+			}
+			
+		}
+
+		set_technology = {
+			sup_mechanized_offensive = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#集中火力计划:		concentrated_fire_plans
+country_event = {
+	id = unlockTech.event.land.1208 
+	title = unlockTech.event.land.1208.t 
+	desc = unlockTech.event.land.1208.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除集中火力计划idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_concentrated_fire_plans
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#机械化攻势
+		trigger = {
+			has_tech = sup_mechanized_offensive 
+		}
+
+		set_technology = {
+			concentrated_fire_plans = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#集中火力管制:		centralized_fire_control
+country_event = {
+	id = unlockTech.event.land.1209 
+	title = unlockTech.event.land.1209.t 
+	desc = unlockTech.event.land.1209.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除集中火力管制idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_centralized_fire_control
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#机械化攻势 sup_mechanized_offensive
+		trigger = {
+			has_tech = sup_mechanized_offensive 
+		}
+
+		set_technology = {
+			centralized_fire_control = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+
+
+
+#--------------------------战壕战科技树--------------------------#
+
+
+#战壕战事件
+country_event = {
+	id = unlockTech.event.land.1300
+	title = unlockTech.event.land.1300.t
+	desc = unlockTech.event.land.1300.d
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除战壕战idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_land_trench_warfare
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			trench_warfare = 1
+		}
+		
+	}
+	
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#--------------------------人海突击科技树--------------------------#
+
+
+#人海突击事件
+country_event = {
+	id = unlockTech.event.land.1400
+	title = unlockTech.event.land.1400.t
+	desc = unlockTech.event.land.1400.d
+
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除人海突击idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_land_mass_assault
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			mass_assault = 1
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+

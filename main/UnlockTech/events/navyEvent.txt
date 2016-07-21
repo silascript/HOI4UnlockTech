@@ -1,0 +1,107 @@
+﻿add_namespace = unlockTech.event.navy
+
+############################## 海军 ##############################
+
+#--------------------------存在舰队科技树--------------------------#
+
+#存在舰队:		fleet_in_being
+country_event = {
+	id = unlockTech.event.navy.2100
+	title = unlockTech.event.navy.2100.t
+	desc = unlockTech.event.navy.2100.d 
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除存在舰队idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_navy_fleet_in_being
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			fleet_in_being = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#--------------------------贸易阻断科技树--------------------------#
+
+
+#贸易阻断:		trade_interdiction
+country_event = {
+	id = unlockTech.event.navy.2200
+	title = unlockTech.event.navy.2200.t 
+	desc = unlockTech.event.navy.2200.d
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除贸易阻断idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_navy_trade_interdiction
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			trade_interdiction = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#--------------------------基地打击科技树--------------------------#
+
+
+#基地打击:		base_strike
+country_event = {
+	id = unlockTech.event.navy.2300
+	title = unlockTech.event.navy.2300.t
+	desc = unlockTech.event.navy.2300.d
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除基地打击idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_navy_base_strike
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			base_strike = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+

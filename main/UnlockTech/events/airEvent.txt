@@ -1,0 +1,116 @@
+﻿
+add_namespace = unlockTech.event.air
+
+
+############################## 空军 ##############################
+
+#--------------------------空中优势科技树--------------------------#
+
+
+#空中优势:		air_superiority
+country_event = {
+	id = unlockTech.event.air.3100
+	title = unlockTech.event.air.3100.t
+	desc = unlockTech.event.air.3100.d
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除空中优势idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_air_air_superiority
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			air_superiority = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+#--------------------------编队飞行科技树--------------------------#
+
+
+#编队飞行:		formation_flying
+country_event = {
+	id = unlockTech.event.air.3200
+	title = unlockTech.event.air.3200.t
+	desc = unlockTech.event.air.3200.d
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除编队飞行idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_air_formation_flying
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			formation_flying = 1
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+#--------------------------部队轮换科技树--------------------------#
+
+
+#部队轮换:		force_rotation 
+country_event = {
+	id = unlockTech.event.air.3300
+	title = unlockTech.event.air.3300.t
+	desc = unlockTech.event.air.3300.d
+
+	is_triggered_only = yes
+	trigger = {
+			AI = NO
+	}
+
+	#移除部队轮换idea
+	hidden_effect = { 
+		remove_ideas = unlockTech_air_force_rotation
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+		set_technology = {
+			force_rotation = 1
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+
+}
+
+
+

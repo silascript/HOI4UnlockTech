@@ -1,0 +1,174 @@
+﻿add_namespace = unlockTech.event.industry
+
+############################工业#################################
+
+#-------------------------集中型工业-------------------------#
+#集中型工业开启成功事件
+country_event = {
+	id = "unlockTech.event.industry.9100"
+	title = unlockTech.event.industry.9100.t
+	desc = unlockTech.event.industry.9100.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除密集型工业idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_concentrated_industry
+		}
+	}
+
+	
+	#确定按钮及开启科技
+	option = {
+
+		#前导科技
+		trigger = {
+			has_tech = basic_machine_tools
+		}
+
+		name = unlockTech.event.common.a
+
+		set_technology = {
+			concentrated_industry = 1
+		}		
+	}
+
+
+	#放弃按钮
+	option = {
+		name = unlockTech.event.common.b
+	}
+	
+
+} # unlockTech.event.industry.910
+
+
+#-------------------------分散型工业-------------------------#
+country_event = {
+	id = unlockTech.event.industry.9101
+	title = unlockTech.event.industry.9101.t
+	desc = unlockTech.event.industry.9101.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+
+	#移除分散工业idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_dispersed_industry
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		trigger = {
+			#前导科技
+			has_tech = basic_machine_tools	
+		}
+
+		set_technology = {
+			dispersed_industry = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+#-------------------------一体化生产线-------------------------#
+country_event = {
+	id = unlockTech.event.industry.9102
+	title = unlockTech.event.industry.9102.t
+	desc = unlockTech.event.industry.9102.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除一体化生产线idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_streamlined_line
+		}
+	}
+
+	
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		trigger = {
+			#前导科技
+			has_tech = assembly_line_production
+		}
+
+		set_technology = {
+			streamlined_line = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+#-------------------------柔性生产线-------------------------#
+country_event = {
+	id = unlockTech.event.industry.9103
+	title = unlockTech.event.industry.9103.t
+	desc = unlockTech.event.industry.9103.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO			
+	}
+
+	#移除柔性生产线idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_flexible_line
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		trigger = {
+			#前导科技
+			has_tech = assembly_line_production
+		}
+
+		set_technology = {
+			flexible_line = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
