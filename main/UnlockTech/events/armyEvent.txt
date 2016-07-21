@@ -1018,12 +1018,14 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+		AI = NO
 	}
 
 	#移除人海突击idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_land_mass_assault
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_mass_assault
+		}
 	}
 
 	#确定按钮及开启科技
@@ -1040,6 +1042,130 @@ country_event = {
 		name = unlockTech.event.common.b
 	}	
 }
+
+
+#纵深防御		defence_in_depth
+country_event = {
+	id = unlockTech.event.land.1401 
+	title = unlockTech.event.land.1401.t 
+	desc = unlockTech.event.land.1401.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除纵深防御idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_defence_in_depth
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#口袋防御 pocket_defence
+		trigger = {
+			has_tech = pocket_defence 
+		}
+
+		set_technology = {
+			defence_in_depth = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#宽大战线作战		large_front_operations
+country_event = {
+	id = unlockTech.event.land.1402 
+	title = unlockTech.event.land.1402.t 
+	desc = unlockTech.event.land.1402.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除宽大战线作战idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_large_front_operations
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#纵深防御 defence_in_depth
+		trigger = {
+			has_tech = defence_in_depth 
+		}
+
+		set_technology = {
+			large_front_operations = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
+#人民军队:		peoples_army
+country_event = {
+	id = unlockTech.event.land.1403
+	title = unlockTech.event.land.1403.t 
+	desc = unlockTech.event.land.1403.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除人民军队idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_peoples_army
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		#前导科技
+		#纵深防御 defence_in_depth
+		trigger = {
+			has_tech = defence_in_depth 
+		}
+
+		set_technology = {
+			peoples_army = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
 
 
 

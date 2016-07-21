@@ -248,6 +248,34 @@ ideas = {
 			}
 			
 		}
+
+		#纵深防御:		defence_in_depth
+		unlockTech_land_defence_in_depth = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1401
+			}
+		}
+
+		#宽大战线作战:	large_front_operations
+		unlockTech_land_large_front_operations = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1402
+			}
+		}
+
+		#人民军队:		peoples_army
+		unlockTech_land_peoples_army = {
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1403
+			}
+		}
+
 	
 	} # unlockTech_land_4
 

@@ -57,8 +57,12 @@
   unlockTech_land_infantry_offensive:0 "开启步兵攻势"
 
 
-
   unlockTech_land_mass_assault:0 "开启人海突击"
+  unlockTech_land_defence_in_depth:0 "开启纵深防御"
+  unlockTech_land_large_front_operations:0 "开启宽大战线作战"
+  unlockTech_land_peoples_army:0 "开启人民军队"
+
+
 
   # navy tech
   unlockTech_navy_fleet_in_being:0 "开启存在舰队"
@@ -141,6 +145,13 @@
   # Mass Assault
   unlockTech.event.land.1400.t:0 "开启人海突击科技"
   unlockTech.event.land.1400.d:0 "努力生孩子壮大我们的部队吧！"
+  unlockTech.event.land.1401.t:0 "开启纵深防御科技"
+  unlockTech.event.land.1401.d:0 "我方可借相对温和的抵抗和暂时让出阵地来以空间换时间，待侵攻方显露疲态后再行反击。"
+  unlockTech.event.land.1402.t:0 "开启宽大战线作战科技"
+  unlockTech.event.land.1402.d:0 "在宽大战线作战需要在长距离进行复数战斗单位间协同，并且协同重在战役层面而非战术层面。"
+  unlockTech.event.land.1403.t:0 "开启人民军队科技"
+  unlockTech.event.land.1403.d:0 "人民军队理论认为,战争中决定因素是人而非武器：调动积极性以弥补技术装备差距，并广泛赢得人民群众的支持。"
+
 
   # ------------------------ navy event ------------------------ #
   #unlockTech.event.navy.t:0 "开启海军科技"
