@@ -51,7 +51,7 @@
   unlockTech_land_centralized_fire_control:0 "集中火力管制"
 
 
-  unlockTech_land_trench_warfare:0 "开启战壕战"
+  unlockTech_land_trench_warfare:0 "开启堑壕战"
   unlockTech_land_grand_assault:0 "开启大规模强袭"
   unlockTech_land_grand_mechanized_offensive:0 "开启大规模机械化攻势"
   unlockTech_land_infantry_offensive:0 "开启步兵攻势"
@@ -81,7 +81,7 @@
   unlockTech_flexible_line:0 "开启柔性生产线"
 
   ########################## event Text ##########################
-  unlockTech.event.common.a:0 "确定"
+  unlockTech.event.common.a:0 "开启"
   unlockTech.event.common.b:0 "放弃"
 
   # ------------------------ land event ------------------------ #
@@ -133,7 +133,7 @@
   unlockTech.event.land.1209.d:0 "集中的火力管制系统使炮兵支援只需要一次评估就能将全师的火力投射到一点上，而不是每个单位都只能请求其所属的炮兵支援。"
 
   # Trench Warfare
-  unlockTech.event.land.1300.t:0 "开启战壕战科技"
+  unlockTech.event.land.1300.t:0 "开启堑壕战科技"
   unlockTech.event.land.1300.d:0 "蹲坑打黑枪!"
   unlockTech.event.land.1301.t:0 "开启大规模强袭科技"
   unlockTech.event.land.1301.d:0 "一旦准备好庞大军队并明确其目标，敌人在强大攻势面前唯有坐以待毙。"
@@ -204,5 +204,5 @@
   ########################## common Text ##########################
 
   # common Text
-  unlockTech.common.a:0 "开启"
+  unlockTech.common.a:0 "确定"
   unlockTech.common.b:0 "放弃"

@@ -190,11 +190,11 @@ ideas = {
 
 	} # unlockTech_land_2
 
-#---------------------战壕战科技树---------------------#
+#---------------------堑壕战科技树---------------------#
 
 	unlockTech_land_3 = {
 
-		#战壕战:		trench_warfare
+		#堑壕战:		trench_warfare
 		unlockTech_land_trench_warfare = {
 			picture = generic_infantry_bonus
 

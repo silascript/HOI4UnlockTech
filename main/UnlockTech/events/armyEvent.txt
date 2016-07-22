@@ -843,10 +843,10 @@ country_event = {
 }
 
 
-#--------------------------战壕战科技树--------------------------#
+#--------------------------堑壕战科技树--------------------------#
 
 
-#战壕战事件
+#堑壕战事件
 country_event = {
 	id = unlockTech.event.land.1300
 	title = unlockTech.event.land.1300.t
@@ -857,7 +857,7 @@ country_event = {
 		AI = NO
 	}
 
-	#移除战壕战idea
+	#移除堑壕战idea
 	immediate = {
 		hidden_effect = { 
 			remove_ideas = unlockTech_land_trench_warfare
@@ -867,6 +867,15 @@ country_event = {
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+
+			#如果科技已开启禁用确定按钮
+			NOT = {
+				has_tech = trench_warfare
+			}
+		}
+
 		set_technology = {
 			trench_warfare = 1
 		}
@@ -902,10 +911,21 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#防御工事 prepared_defense
+		
 		trigger = {
-			has_tech =  prepared_defense
+
+			AND = {
+				#前导科技
+				#防御工事 prepared_defense
+				has_tech =  prepared_defense
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = grand_assault
+				}
+
+			} #AND
+			
 		}
 
 		set_technology = {
@@ -943,10 +963,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#大规模强袭
 		trigger = {
-			has_tech = grand_assault 
+
+			AND = {
+				#前导科技
+				#大规模强袭
+				has_tech = grand_assault 
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = grand_mechanized_offensive
+				}
+
+			} #AND
+			
 		}
 
 		set_technology = {
@@ -984,10 +1014,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#大规模强袭
 		trigger = {
-			has_tech = grand_assault 
+
+			AND = {
+				#前导科技
+				#大规模强袭
+				has_tech = grand_assault
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = infantry_offensive
+				}
+
+			} #AND
+			 
 		}
 
 		set_technology = {
