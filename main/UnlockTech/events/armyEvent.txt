@@ -457,6 +457,15 @@ country_event = {
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+
+			#如果科技已开启禁用确定按钮
+			NOT = {
+				has_tech = superior_firepower
+			}
+		}
+
 		set_technology = {
 			superior_firepower = 1
 		}
@@ -491,10 +500,19 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#优势火力
 		trigger = {
-			has_tech = superior_firepower
+			
+			AND = {
+				#前导科技
+				#优势火力
+				has_tech = superior_firepower
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = sup_delay
+				}
+			} #AND
+			
 		}
 
 		set_technology = {
@@ -532,10 +550,19 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#迟滞
+		
 		trigger = {
-			has_tech = sup_delay 
+			AND = {
+				#前导科技
+				#迟滞
+				has_tech = sup_delay
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = mobile_defence
+				}
+			} #AND
+			
 		}
 
 		set_technology = {
@@ -572,10 +599,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#机动防御
+		
 		trigger = {
-			has_tech = mobile_defence 
+
+			AND = {
+				#前导科技
+				#机动防御
+				has_tech = mobile_defence
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = dispersed_support
+				}
+			} #AND
+			
 		}
 
 		set_technology = {
@@ -613,10 +650,21 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#机动防御
+		
 		trigger = {
-			has_tech =  mobile_defence
+
+			AND = {
+				#前导科技
+				#机动防御
+				has_tech =  mobile_defence
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = intergrated_support
+				}
+
+			} #AND
+
 		}
 
 		set_technology = {
@@ -654,10 +702,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#分散支援 dispersed_support
+		
 		trigger = {
-			has_tech = dispersed_support 
+
+			AND = {
+				#前导科技
+				#分散支援 dispersed_support
+				has_tech = dispersed_support
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = overwhelming_firepower
+				}
+			} #AND
+
 		}
 
 		set_technology = {
@@ -695,10 +753,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#协调支援 intergrated_support
+		
 		trigger = {
-			has_tech = intergrated_support 
+
+			AND = {
+				#前导科技
+				#协调支援 intergrated_support
+				has_tech = intergrated_support
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = regimental_combat_teams
+				}
+			} #AND
+			 
 		}
 
 		set_technology = {
@@ -736,15 +804,25 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#压倒性火力 overwhelming_firepower
-		#或
-		#团级战斗队regimental_combat_teams
+		
 		trigger = {
-			OR = {
-				has_tech = overwhelming_firepower
-				has_tech =  regimental_combat_teams
-			}
+
+			AND = {
+				#前导科技
+				#压倒性火力 overwhelming_firepower
+				#或
+				#团级战斗队regimental_combat_teams
+				OR = {
+					has_tech = overwhelming_firepower
+					has_tech =  regimental_combat_teams
+				}
+				
+			
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = sup_mechanized_offensive
+				}	
+			} #AND
 			
 		}
 
@@ -783,10 +861,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#机械化攻势
+		
 		trigger = {
-			has_tech = sup_mechanized_offensive 
+
+			AND = {
+				#前导科技
+				#机械化攻势
+				has_tech = sup_mechanized_offensive
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = concentrated_fire_plans
+				}
+			} #AND
+			 
 		}
 
 		set_technology = {
@@ -824,10 +912,20 @@ country_event = {
 	option = {
 		name = unlockTech.event.common.a
 
-		#前导科技
-		#机械化攻势 sup_mechanized_offensive
+		
 		trigger = {
-			has_tech = sup_mechanized_offensive 
+
+			AND = {
+				#前导科技
+				#机械化攻势 sup_mechanized_offensive
+				has_tech = sup_mechanized_offensive
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = centralized_fire_control
+				}
+			} #AND
+			
 		}
 
 		set_technology = {
