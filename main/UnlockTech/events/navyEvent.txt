@@ -16,13 +16,23 @@ country_event = {
 	}
 
 	#移除存在舰队idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_navy_fleet_in_being
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_navy_fleet_in_being
+		}
 	}
 
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+			#如果科技已开启禁用确定按钮
+			NOT ={
+				has_tech = 	fleet_in_being
+			}
+		}
+
 		set_technology = {
 			fleet_in_being = 1	
 		}
@@ -51,13 +61,23 @@ country_event = {
 	}
 
 	#移除贸易阻断idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_navy_trade_interdiction
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_navy_trade_interdiction
+		}
 	}
 
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+			#如果科技已开启禁用确定按钮
+			NOT ={
+				has_tech = 	trade_interdiction
+			}
+		}
+
 		set_technology = {
 			trade_interdiction = 1	
 		}
@@ -86,13 +106,23 @@ country_event = {
 	}
 
 	#移除基地打击idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_navy_base_strike
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_navy_base_strike
+		}
 	}
 
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+			#如果科技已开启禁用确定按钮
+			NOT ={
+				has_tech = 	base_strike
+			}
+		}
+		
 		set_technology = {
 			base_strike = 1	
 		}
