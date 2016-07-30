@@ -565,63 +565,11 @@ country_event = {
 }
 
 
-#大规模强袭:				grand_assault
+#大规模机械化攻势:	grand_mechanized_offensive
 country_event = {
 	id = unlockTech.event.land.1301 
 	title = unlockTech.event.land.1301.t 
 	desc = unlockTech.event.land.1301.d
-
-	is_triggered_only = yes
-	trigger = {
-		AI = NO
-	}
-
-	#移除大规模强袭idea
-	immediate = {
-		hidden_effect = { 
-			remove_ideas = unlockTech_land_grand_assault
-		}
-	}
-
-	#确定按钮及开启科技
-	option = {
-		name = unlockTech.event.common.a
-
-		
-		trigger = {
-
-			AND = {
-				#前导科技
-				#防御工事 prepared_defense
-				has_tech =  prepared_defense
-
-				#如果科技已开启禁用确定按钮
-				NOT = {
-					has_tech = grand_assault
-				}
-
-			} #AND
-			
-		}
-
-		set_technology = {
-			grand_assault = 1
-		}
-		
-	}
-	
-	#放弃
-	option = {
-		name = unlockTech.event.common.b
-	}	
-}
-
-
-#大规模机械化攻势:	grand_mechanized_offensive
-country_event = {
-	id = unlockTech.event.land.1302 
-	title = unlockTech.event.land.1302.t 
-	desc = unlockTech.event.land.1302.d
 
 	is_triggered_only = yes
 	trigger = {
@@ -670,9 +618,9 @@ country_event = {
 
 #步兵攻势:			infantry_offensive
 country_event = {
-	id = unlockTech.event.land.1303 
-	title = unlockTech.event.land.1303.t 
-	desc = unlockTech.event.land.1303.d
+	id = unlockTech.event.land.1302 
+	title = unlockTech.event.land.1302.t 
+	desc = unlockTech.event.land.1302.d
 
 	is_triggered_only = yes
 	trigger = {
@@ -769,61 +717,11 @@ country_event = {
 }
 
 
-#纵深防御		defence_in_depth
+#宽大战线作战		large_front_operations
 country_event = {
 	id = unlockTech.event.land.1401 
 	title = unlockTech.event.land.1401.t 
 	desc = unlockTech.event.land.1401.d
-
-	is_triggered_only = yes
-	trigger = {
-		AI = NO
-	}
-
-	#移除纵深防御idea
-	immediate = {
-		hidden_effect = { 
-			remove_ideas = unlockTech_land_defence_in_depth
-		}
-	}
-
-	#确定按钮及开启科技
-	option = {
-		name = unlockTech.event.common.a
-
-		
-		trigger = {
-			AND = {
-				#前导科技
-				#口袋防御 pocket_defence
-				has_tech = pocket_defence 
-
-				#如果科技已开启禁用确定按钮
-				NOT = {
-					has_tech = defence_in_depth
-				}
-
-			} # AND
-
-		}
-
-		set_technology = {
-			defence_in_depth = 1
-		}
-		
-	}
-	
-	#放弃
-	option = {
-		name = unlockTech.event.common.b
-	}	
-}
-
-#宽大战线作战		large_front_operations
-country_event = {
-	id = unlockTech.event.land.1402 
-	title = unlockTech.event.land.1402.t 
-	desc = unlockTech.event.land.1402.d
 
 	is_triggered_only = yes
 	trigger = {
@@ -872,9 +770,9 @@ country_event = {
 
 #人民军队:		peoples_army
 country_event = {
-	id = unlockTech.event.land.1403
-	title = unlockTech.event.land.1403.t 
-	desc = unlockTech.event.land.1403.d
+	id = unlockTech.event.land.1402
+	title = unlockTech.event.land.1402.t 
+	desc = unlockTech.event.land.1402.d
 
 	is_triggered_only = yes
 	trigger = {

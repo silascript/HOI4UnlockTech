@@ -9,18 +9,18 @@
   UnlockTech_Air_idea:0 "开启空军科技"
   UnlockTech_Industry_idea:0 "开启工业科技"
 
-  unlockTech_land_1:0 "开启陆军机动作战科技"
-  unlockTech_land_2:0 "开启陆军优势火力科技"
-  unlockTech_land_3:0 "开启陆军战壕战科技"
-  unlockTech_land_4:0 "开启陆军人海战术科技"
+  unlockTech_land_1:0 "开启陆军机动作战学说科技"
+  unlockTech_land_2:0 "开启陆军优势火力学说科技"
+  unlockTech_land_3:0 "开启陆军决战计划学说科技"
+  unlockTech_land_4:0 "开启陆军人海战术学说科技"
 
-  unlockTech_navy_1:0 "开启海军存在舰队科技"
-  unlockTech_navy_2:0 "开启海军贸易阻断科技"
-  unlockTech_navy_3:0 "开启海军基地打击科技"
+  unlockTech_navy_1:0 "开启海军存在舰队学说科技"
+  unlockTech_navy_2:0 "开启海军贸易阻断学说科技"
+  unlockTech_navy_3:0 "开启海军基地打击学说科技"
 
-  unlockTech_air_1:0 "开启空军空中优势科技"
-  unlockTech_air_2:0 "开启空军编队飞行科技"
-  unlockTech_air_3:0 "开启空军部队轮换科技"
+  unlockTech_air_1:0 "开启空军空中优势学说科技"
+  unlockTech_air_2:0 "开启空军编队飞行学说科技"
+  unlockTech_air_3:0 "开启空军部队轮换学说科技"
 
   unlockTech_industry_1:0 "开启工业科技"
   
@@ -28,37 +28,25 @@
   #科技项标题
   # land tech
   unlockTech_land_mobile_warfare:0 "开启机动作战"
-  unlockTech_land_Delay:0 "迟滞"
-  unlockTech_land_Elastic_Defence:0 "弹性防御"
   unlockTech_land_Mobile_Infantry:0 "机动步兵"
   unlockTech_land_Armored_Spearhead:0 "装甲先锋"
-  unlockTech_land_Mechanized_Offensive:0 "机械化攻势"
-  unlockTech_land_Blitzkrieg:0 "闪电战"
-  unlockTech_land_Kampfgruppe:0 "战斗群"
   unlockTech_land_Volkssturm:0 "国民突击队"
   unlockTech_land_Fire_Brigades:0 "战场救火队"
 
 
   unlockTech_land_superior_firepower:0 "开启优势火力"
-  unlockTech_land_sup_delay:0 "迟滞"
-  unlockTech_land_mobile_defence:0 "机动防御"
   unlockTech_land_dispersed_support:0 "分散支援"
   unlockTech_land_intergrated_support:0 "协调支援"
-  unlockTech_land_overwhelming_firepower:0 "压倒性火力"
-  unlockTech_land_regimental_combat_teams:0 "团级战斗队"
-  unlockTech_land_sup_mechanized_offensive:0 "机械化攻势"
   unlockTech_land_concentrated_fire_plans:0 "集中火力计划"
   unlockTech_land_centralized_fire_control:0 "集中火力管制"
 
 
   unlockTech_land_trench_warfare:0 "开启堑壕战"
-  unlockTech_land_grand_assault:0 "开启大规模强袭"
   unlockTech_land_grand_mechanized_offensive:0 "开启大规模机械化攻势"
   unlockTech_land_infantry_offensive:0 "开启步兵攻势"
 
 
   unlockTech_land_mass_assault:0 "开启人海突击"
-  unlockTech_land_defence_in_depth:0 "开启纵深防御"
   unlockTech_land_large_front_operations:0 "开启宽大战线作战"
   unlockTech_land_peoples_army:0 "开启人民军队"
 
@@ -115,22 +103,18 @@
   # Trench Warfare
   unlockTech.event.land.1300.t:0 "开启堑壕战科技"
   unlockTech.event.land.1300.d:0 "蹲坑打黑枪!"
-  unlockTech.event.land.1301.t:0 "开启大规模强袭科技"
-  unlockTech.event.land.1301.d:0 "一旦准备好庞大军队并明确其目标，敌人在强大攻势面前唯有坐以待毙。"
-  unlockTech.event.land.1302.t:0 "开启大规模机械化攻势科技"
-  unlockTech.event.land.1302.d:0 "摩托化部队表现尚可，但要主导攻势，需要我方机械化步兵乘坐能搭载重武器并提供乘员保护的装甲运输车辆进入战场。"
-  unlockTech.event.land.1303.t:0 "开启步兵攻势科技"
-  unlockTech.event.land.1303.d:0 "步兵的进攻精神是任何胜利的重要基石，我军一定要让步兵带头冲锋。"
+  unlockTech.event.land.1301.t:0 "开启大规模机械化攻势科技"
+  unlockTech.event.land.1301.d:0 "摩托化部队表现尚可，但要主导攻势，需要我方机械化步兵乘坐能搭载重武器并提供乘员保护的装甲运输车辆进入战场。"
+  unlockTech.event.land.1302.t:0 "开启步兵攻势科技"
+  unlockTech.event.land.1302.d:0 "步兵的进攻精神是任何胜利的重要基石，我军一定要让步兵带头冲锋。"
 
   # Mass Assault
   unlockTech.event.land.1400.t:0 "开启人海突击科技"
   unlockTech.event.land.1400.d:0 "努力生孩子壮大我们的部队吧！"
-  unlockTech.event.land.1401.t:0 "开启纵深防御科技"
-  unlockTech.event.land.1401.d:0 "我方可借相对温和的抵抗和暂时让出阵地来以空间换时间，待侵攻方显露疲态后再行反击。"
-  unlockTech.event.land.1402.t:0 "开启宽大战线作战科技"
-  unlockTech.event.land.1402.d:0 "在宽大战线作战需要在长距离进行复数战斗单位间协同，并且协同重在战役层面而非战术层面。"
-  unlockTech.event.land.1403.t:0 "开启人民军队科技"
-  unlockTech.event.land.1403.d:0 "人民军队理论认为,战争中决定因素是人而非武器：调动积极性以弥补技术装备差距，并广泛赢得人民群众的支持。"
+  unlockTech.event.land.1401.t:0 "开启宽大战线作战科技"
+  unlockTech.event.land.1401.d:0 "在宽大战线作战需要在长距离进行复数战斗单位间协同，并且协同重在战役层面而非战术层面。"
+  unlockTech.event.land.1402.t:0 "开启人民军队科技"
+  unlockTech.event.land.1402.d:0 "人民军队理论认为,战争中决定因素是人而非武器：调动积极性以弥补技术装备差距，并广泛赢得人民群众的支持。"
 
 
   # ------------------------ navy event ------------------------ #
