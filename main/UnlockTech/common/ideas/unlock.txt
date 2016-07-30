@@ -67,31 +67,14 @@ ideas = {
 			
 		}
 
-		#迟滞:			sup_delay
-		unlockTech_land_sup_delay = {
-			picture = generic_infantry_bonus
-
-			on_add ={
-				country_event = unlockTech.event.land.1201
-			}
-			
-		}
-
-		#机动防御:		mobile_defence
-		unlockTech_land_mobile_defence = {
-			picture = generic_infantry_bonus
-
-			on_add ={
-				country_event = unlockTech.event.land.1202
-			}
-		}
+		
 
 		#分散支援:			dispersed_support
 		unlockTech_land_dispersed_support = {
 			picture = generic_infantry_bonus
 
 			on_add ={
-				country_event = unlockTech.event.land.1203
+				country_event = unlockTech.event.land.1201
 			}
 		}
 
@@ -100,43 +83,17 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			on_add ={
-				country_event = unlockTech.event.land.1204
+				country_event = unlockTech.event.land.1202
 			}
 		}
 
-		#压倒性火力:			overwhelming_firepower
-		unlockTech_land_overwhelming_firepower = {
-			picture = generic_infantry_bonus
-
-			on_add ={
-				country_event = unlockTech.event.land.1205
-			}
-		}
-
-		#团级战斗队:			regimental_combat_teams
-		unlockTech_land_regimental_combat_teams = {
-			picture = generic_infantry_bonus
-
-			on_add ={
-				country_event = unlockTech.event.land.1206
-			}
-		}
-
-		#机械化攻势:			sup_mechanized_offensive
-		unlockTech_land_sup_mechanized_offensive = {
-			picture = generic_infantry_bonus
-
-			on_add ={
-				country_event = unlockTech.event.land.1207
-			}
-		}
 
 		#集中火力计划:		concentrated_fire_plans	
 		unlockTech_land_concentrated_fire_plans = {
 			picture = generic_infantry_bonus
 
 			on_add ={
-				country_event = unlockTech.event.land.1208
+				country_event = unlockTech.event.land.1203
 			}
 		}
 
@@ -145,7 +102,7 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			on_add ={
-				country_event = unlockTech.event.land.1209
+				country_event = unlockTech.event.land.1204
 			}	
 		}
 
@@ -166,14 +123,6 @@ ideas = {
 			
 		}
 
-		#大规模强袭:				grand_assault
-		unlockTech_land_grand_assault = {
-			picture = generic_infantry_bonus
-
-			on_add = {
-				country_event = unlockTech.event.land.1301
-			}
-		}
 
 		#大规模机械化攻势:	grand_mechanized_offensive
 		unlockTech_land_grand_mechanized_offensive = {
@@ -211,14 +160,6 @@ ideas = {
 			
 		}
 
-		#纵深防御:		defence_in_depth
-		unlockTech_land_defence_in_depth = {
-			picture = generic_infantry_bonus
-
-			on_add = {
-				country_event = unlockTech.event.land.1401
-			}
-		}
 
 		#宽大战线作战:	large_front_operations
 		unlockTech_land_large_front_operations = {
