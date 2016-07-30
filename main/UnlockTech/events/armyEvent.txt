@@ -9,7 +9,7 @@ add_namespace = unlockTech.event.land
 
 ############################## 陆军 ##############################
 
-#--------------------------机动作战科技树--------------------------#
+#--------------------------机动作战学说科技树--------------------------#
 
 
 #机动作战根科技事件 mobile_warfare
@@ -58,117 +58,12 @@ country_event = {
 
 }
 
-#滞后科技事件
+
+#机动步兵:	Mobile Infantry
 country_event = {
 	id = unlockTech.event.land.1101
 	title = unlockTech.event.land.1101.t 
 	desc = unlockTech.event.land.1101.d 
-
-
-	is_triggered_only = yes
-	trigger = {
-		AI = NO
-	}
-
-	#移除滞后idea
-	immediate = {
-		hidden_effect = { 
-			remove_ideas = unlockTech_land_Delay
-		}
-	}
-	
-
-	#确定按钮及开启科技
-	option = {
-		name = unlockTech.event.common.a
-
-		
-		trigger = {
-
-			AND = {
-				#前导科技
-				#机动作战 mobile_warfare
-				has_tech = mobile_warfare
-
-				#如果科技已开启禁用确定按钮
-				NOT = {
-					has_tech = delay
-				}
-			} #AND
-			
-		}
-
-		set_technology = {
-			delay = 1
-		}
-		
-	}
-	
-	#放弃
-	option = {
-		name = unlockTech.event.common.b
-	}	
-
-}
-
-#弹性防御:	Elastic Defence
-country_event = {
-	id = unlockTech.event.land.1102
-	title = unlockTech.event.land.1102.t 
-	desc = unlockTech.event.land.1102.d 
-
-	is_triggered_only = yes
-	trigger = {
-		AI = NO
-	}
-
-
-	#移除弹性防御idea
-	immediate = {
-		hidden_effect = { 
-			remove_ideas = unlockTech_land_Elastic_Defence 
-		}
-	}
-
-
-	#确定按钮及开启科技
-	option = {
-		name = unlockTech.event.common.a
-
-		
-		trigger = {
-
-			AND = {
-				#前导科技
-				#迟滞 delay
-				has_tech = delay
-				
-				#如果科技已开启禁用确定按钮
-				NOT = {
-					has_tech = elastic_defence
-				}
-			} #AND
-			
-		}
-
-		set_technology = {
-			elastic_defence = 1	
-		}
-		
-	}
-	
-	#放弃
-	option = {
-		name = unlockTech.event.common.b
-	}	
-
-}
-
-#机动步兵:	Mobile Infantry
-country_event = {
-	id = unlockTech.event.land.1103
-	title = unlockTech.event.land.1103.t 
-	desc = unlockTech.event.land.1103.d 
 
 	is_triggered_only = yes
 	trigger = {
@@ -218,9 +113,9 @@ country_event = {
 
 #装甲先锋:	Armored Spearhead
 country_event = {
-	id = unlockTech.event.land.1104
-	title = unlockTech.event.land.1104.t 
-	desc = unlockTech.event.land.1104.d 
+	id = unlockTech.event.land.1102
+	title = unlockTech.event.land.1102.t 
+	desc = unlockTech.event.land.1102.d 
 
 	is_triggered_only = yes
 	trigger = {
@@ -268,173 +163,13 @@ country_event = {
 	}
 }
 
-#机械化攻势:	Mechanized Offensive
-country_event = {
-	id = unlockTech.event.land.1105
-	title = unlockTech.event.land.1105.t 
-	desc = unlockTech.event.land.1105.d 
-
-	is_triggered_only = yes
-	trigger = {
-		AI = NO
-	}
-
-
-	#移除机械化攻势idea
-	immediate = {
-		hidden_effect = { 
-			remove_ideas = unlockTech_land_Mechanized_Offensive
-		}
-	}
-
-
-	#确定按钮及开启科技
-	option = {
-		name = unlockTech.event.common.a
-
-		
-		trigger = {
-
-			AND = {
-				#前导科技
-				#大规模摩托化
-				has_tech = mass_motorization
-
-				#如果科技已开启禁用确定按钮
-				NOT = {
-					has_tech = mechanised_offensive
-				}
-			} #AND
-			
-		}
-
-		set_technology = {
-			mechanised_offensive = 1	
-		}
-		
-	}
-	
-	#放弃
-	option = {
-		name = unlockTech.event.common.b
-	}
-}
-
-#闪电战:		Blitzkrieg
-country_event = {
-	
-	id = unlockTech.event.land.1106
-	title = unlockTech.event.land.1106.t 
-	desc = unlockTech.event.land.1106.d 
-
-	is_triggered_only = yes
-	trigger = {
-		AI = NO
-	}
-
-
-	#移除闪电战idea
-	immediate = {
-		hidden_effect = { 
-			remove_ideas = unlockTech_land_Blitzkrieg
-		}
-	}
-
-
-	#确定按钮及开启科技
-	option = {
-		name = unlockTech.event.common.a
-
-		
-		trigger = {
-
-			AND = {
-				#前导科技
-				#重点突破战术Schwerpunk
-				has_tech = schwerpunk
-
-				#如果科技已开启禁用确定按钮
-				NOT = {
-					has_tech = blitzkrieg
-				}
-			} #AND
-			
-		}
-
-		set_technology = {
-			blitzkrieg = 1	
-		}
-		
-	}
-	
-	#放弃
-	option = {
-		name = unlockTech.event.common.b
-	}
-
-}
-
-#战斗群:		Kampfgruppe
-country_event = {
-	id = unlockTech.event.land.1107
-	title = unlockTech.event.land.1107.t 
-	desc = unlockTech.event.land.1107.d 
-
-	is_triggered_only = yes
-	trigger = {
-		AI = NO
-	}
-
-
-	#移除战斗群idea
-	immediate = {
-		hidden_effect = { 
-			remove_ideas = unlockTech_land_Kampfgruppe
-		}
-	}
-
-
-	#确定按钮及开启科技
-	option = {
-		name = unlockTech.event.common.a
-
-		
-		trigger = {
-
-			AND = {
-				#前导科技
-				#前置科技:机械化攻势或闪电战
-				OR ={
-					has_tech = mechanised_offensive
-					has_tech = blitzkrieg
-				}
-
-				#如果科技已开启禁用确定按钮
-				NOT = {
-					has_tech = kampfgruppe
-				}
-			} #AND
-			
-		}
-
-		set_technology = {
-			kampfgruppe = 1	
-		}
-		
-	}
-	
-	#放弃
-	option = {
-		name = unlockTech.event.common.b
-	}
-}
 
 
 #国民突击队:	Volkssturm
 country_event = {
-	id = unlockTech.event.land.1108
-	title = unlockTech.event.land.1108.t 
-	desc = unlockTech.event.land.1108.d 
+	id = unlockTech.event.land.1103
+	title = unlockTech.event.land.1103.t 
+	desc = unlockTech.event.land.1103.d 
 
 	is_triggered_only = yes
 	trigger = {
@@ -483,9 +218,9 @@ country_event = {
 
 #战场救火队:	Fire Brigades
 country_event = {
-	id = unlockTech.event.land.1109
-	title = unlockTech.event.land.1109.t 
-	desc = unlockTech.event.land.1109.d 
+	id = unlockTech.event.land.1104
+	title = unlockTech.event.land.1104.t 
+	desc = unlockTech.event.land.1104.d 
 
 	is_triggered_only = yes
 	trigger = {

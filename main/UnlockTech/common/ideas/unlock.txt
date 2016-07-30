@@ -15,27 +15,12 @@ ideas = {
 			}				
 		}
 
-		#迟滞:			Delay
-		unlockTech_land_Delay = {
-			picture = generic_infantry_bonus
-			on_add = {
-				country_event = unlockTech.event.land.1101
-			}
-		}
-
-		#弹性防御:		Elastic Defence
-		unlockTech_land_Elastic_Defence = {
-			picture = generic_infantry_bonus
-			on_add = {
-				country_event = unlockTech.event.land.1102
-			}
-		}
 
 		#机动步兵:		Mobile Infantry
 		unlockTech_land_Mobile_Infantry = {
 			picture = generic_infantry_bonus
 			on_add = {
-				country_event = unlockTech.event.land.1103
+				country_event = unlockTech.event.land.1101
 			}
 		}
 
@@ -43,39 +28,16 @@ ideas = {
 		unlockTech_land_Armored_Spearhead = {
 			picture = generic_infantry_bonus
 			on_add = {
-				country_event = unlockTech.event.land.1104
+				country_event = unlockTech.event.land.1102
 			}
 		}
 
-		#机械化攻势:		Mechanized Offensive
-		unlockTech_land_Mechanized_Offensive = {
-			picture = generic_infantry_bonus
-			on_add = {
-				country_event = unlockTech.event.land.1105
-			}
-		}
-
-		#闪电战:			Blitzkrieg
-		unlockTech_land_Blitzkrieg = {
-			picture = generic_infantry_bonus
-			on_add = {
-				country_event = unlockTech.event.land.1106
-			}
-		}
-
-		#战斗群（前置科技:机械化攻势或闪电战）:		Kampfgruppe
-		unlockTech_land_Kampfgruppe = {
-			picture = generic_infantry_bonus
-			on_add = {
-				country_event = unlockTech.event.land.1107
-			}
-		}
 
 		#国民突击队:		Volkssturm
 		unlockTech_land_Volkssturm = {
 			picture = generic_infantry_bonus
 			on_add = {
-				country_event = unlockTech.event.land.1108
+				country_event = unlockTech.event.land.1103
 			}
 		}
 
@@ -83,7 +45,7 @@ ideas = {
 		unlockTech_land_Fire_Brigades = {
 			picture = generic_infantry_bonus
 			on_add = {
-				country_event = unlockTech.event.land.1109
+				country_event = unlockTech.event.land.1104
 			}
 		}
 
