@@ -111,15 +111,14 @@
 
 -------------------------连续作战学说科技树-------------------------
 	
-	部队轮换:						force_rotation 
+	*部队轮换:						force_rotation 
 
 
 ///////////////////////////////工业///////////////////////////////
 
 工业:
 
-	集中分散工业前置科技:
-		-基础机床:				basic_machine_tools	
+		*基础机床:				basic_machine_tools	
 			*集中型工业:			concentrated_industry
 			*分散型工业:			dispersed_industry
 

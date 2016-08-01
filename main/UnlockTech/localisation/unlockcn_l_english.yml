@@ -159,6 +159,10 @@
   #编队飞行:   formation_flying
   unlockTech.event.air.3200.t:0 "开启编队飞行科技"
   unlockTech.event.air.3200.d:0 "激活开启编队飞行科技"
+  unlockTech.event.air.3201.t:0 "开启编队战斗科技"
+  unlockTech.event.air.3201.d:0 "激活开启编队战斗科技"
+  unlockTech.event.air.3202.t:0 "开启战斗机王牌主导科技"
+  unlockTech.event.air.3202.d:0 "激活开启战斗机王牌主导科技"
 
   #部队轮换:   force_rotation
   unlockTech.event.air.3300.t:0 "开启部队轮换科技"

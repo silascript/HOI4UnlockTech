@@ -301,6 +301,109 @@ country_event = {
 
 }
 
+#编队战斗:		formation_fighting
+country_event = {
+	id = unlockTech.event.air.3201
+	title = unlockTech.event.air.3201.t 
+	desc = unlockTech.event.air.3201.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除编队战斗idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_formation_fighting
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		
+		trigger = {
+			
+			AND = {
+				#前导科技
+				#直接对地支援 direct_ground_support
+				has_tech = direct_ground_support
+				
+				#如果科技已开启禁用确定按钮	
+				NOT = {
+					has_tech = formation_fighting
+				}
+
+			} #AND
+			
+		}
+
+		set_technology = {
+			formation_fighting = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#战斗机王牌主导:	fighter_ace_initiative
+country_event = {
+	id = unlockTech.event.air.3202
+	title = unlockTech.event.air.3202.t 
+	desc = unlockTech.event.air.3202.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除战斗机王牌主导idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_fighter_ace_initiative
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		
+		trigger = {
+			
+			AND = {
+				#前导科技
+				#直接对地支援 direct_ground_support
+				has_tech = direct_ground_support
+				
+				#如果科技已开启禁用确定按钮	
+				NOT = {
+					has_tech = fighter_ace_initiative
+				}
+
+			} #AND
+			
+		}
+
+		set_technology = {
+			fighter_ace_initiative = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
 
 #--------------------------部队轮换科技树--------------------------#
 
