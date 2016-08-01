@@ -51,7 +51,7 @@
 
 -------------------------人海突击学说科技树-------------------------
 
-	人海突击:				mass_assault
+	*人海突击:				mass_assault
 		口袋防御:			pocket_defence
 			-纵深防御:		defence_in_depth
 			*宽大战线作战:	large_front_operations
@@ -80,11 +80,11 @@
 
 -------------------------贸易阻断学说科技树-------------------------
 	
-	贸易阻断:				trade_interdiction
+	*贸易阻断:				trade_interdiction
 
 -------------------------基地打击学说科技树-------------------------
 	
-	基地打击:				base_strike
+	*基地打击:				base_strike
 
 
 ///////////////////////////////空军///////////////////////////////
@@ -93,25 +93,25 @@
 
 -------------------------战略破坏学说科技树-------------------------
 	
-	空中优势:				air_superiority
-		-对舰攻击战术:
-			*战斗机扫荡:
-			*缠斗经验:
+	*空中优势:					air_superiority
+		-对舰攻击战术:			naval_strike_tactics
+			*战斗机扫荡:			fighter_sweeps
+			*缠斗经验:			dogfighting_experience
 
-		-后勤轰炸:
-			*夜间轰炸:
-			*日间轰炸:
+		-后勤轰炸:				logistical_bombing
+			*夜间轰炸:			night_bombing
+			*日间轰炸:			day_bombing
 
 -------------------------战场支援学说科技树-------------------------
 	
-	编队飞行:				formation_flying
-		-直接对地支援:
-			*编队战斗:
-			*战斗机王牌主导:
+	*编队飞行:					formation_flying
+		-直接对地支援:			direct_ground_support
+			*编队战斗:			formation_fighting
+			*战斗机王牌主导:		fighter_ace_initiative
 
 -------------------------连续作战学说科技树-------------------------
 	
-	部队轮换:				force_rotation 
+	部队轮换:						force_rotation 
 
 
 ///////////////////////////////工业///////////////////////////////
@@ -119,17 +119,14 @@
 工业:
 
 	集中分散工业前置科技:
-		基础机床:			basic_machine_tools	
-		
-	集中型工业:				concentrated_industry
-	分散型工业:				dispersed_industry
+		-基础机床:				basic_machine_tools	
+			*集中型工业:			concentrated_industry
+			*分散型工业:			dispersed_industry
 
 
-	一体化及柔性生产线的前置科技:
-		流水线生产:			assembly_line_production
-
-	一体化生产线:				streamlined_line
-	柔性生产线:				flexible_line
+		-流水线生产:				assembly_line_production
+			*一体化生产线:		streamlined_line
+			*柔性生产线:			flexible_line
 
 	
 

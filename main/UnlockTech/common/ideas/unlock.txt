@@ -229,7 +229,7 @@ ideas = {
 
 ################################空军################################
 
-#---------------------空军空中优势科技树---------------------#
+#---------------------战备破坏学说科技树---------------------#
 
 	#空中优势科技树
 	unlockTech_air_1 = {
@@ -242,9 +242,46 @@ ideas = {
 				country_event = unlockTech.event.air.3100
 			}
 		}
+
+		#战斗机扫荡:		fighter_sweeps
+		unlockTech_air_fighter_sweeps = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3101
+			}
+		}
+
+		#缠斗经验:		dogfighting_experience
+		unlockTech_air_dogfighting_experience = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3102
+			}
+		}
+
+		#夜间轰炸:		night_bombing
+		unlockTech_air_night_bombing = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3103
+			}
+		}
+
+		#日间轰炸:		day_bombing
+		unlockTech_air_day_bombing = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3104
+			}
+		}
+
 	} # unlockTech_air_1
 
-#---------------------空军编队飞行科技树---------------------#
+#---------------------战场支援学说科技树---------------------#
 	
 	#编队飞行科技树
 	unlockTech_air_2 = {
@@ -256,6 +293,25 @@ ideas = {
 				country_event = unlockTech.event.air.3200
 			}
 		}
+
+		#编队战斗:			formation_fighting
+		unlockTech_air_formation_fighting = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3201
+			}
+		}
+
+		#战斗机王牌主导:		fighter_ace_initiative
+		unlockTech_air_fighter_ace_initiative = {
+			picture = generic_air_bonus
+
+			on_add = {
+				country_event = unlockTech.event.air.3202
+			}
+		}
+
 	} # unlockTech_air_2
 
 #---------------------空军部队轮换科技树---------------------#

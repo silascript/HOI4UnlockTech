@@ -18,9 +18,9 @@
   unlockTech_navy_2:0 "开启海军贸易阻断学说科技"
   unlockTech_navy_3:0 "开启海军基地打击学说科技"
 
-  unlockTech_air_1:0 "开启空军空中优势学说科技"
-  unlockTech_air_2:0 "开启空军编队飞行学说科技"
-  unlockTech_air_3:0 "开启空军部队轮换学说科技"
+  unlockTech_air_1:0 "开启空军战略破坏学说科技"
+  unlockTech_air_2:0 "开启空军战场支援学说科技"
+  unlockTech_air_3:0 "开启空军连续作战学说科技"
 
   unlockTech_industry_1:0 "开启工业科技"
   
@@ -59,7 +59,16 @@
 
   #air tech
   unlockTech_air_air_superiority:0 "开启空中优势"
+  unlockTech_air_fighter_sweeps:0 "开启战斗机扫荡"
+  unlockTech_air_dogfighting_experience:0 "开启缠斗经验"
+  unlockTech_air_night_bombing:0 "夜间轰炸"
+  unlockTech_air_day_bombing:0 "日间轰炸"
+
+
   unlockTech_air_formation_flying:0 "开启编队飞行"
+  unlockTech_air_formation_fighting:0 "开启编队战斗"
+  unlockTech_air_fighter_ace_initiative:0 "开启战斗机王牌主导"
+
   unlockTech_air_force_rotation:0 "开启部队轮换"
 
   #industry tech
@@ -138,6 +147,14 @@
   #空中优势:    air_superiority
   unlockTech.event.air.3100.t:0 "开启空中优势科技"
   unlockTech.event.air.3100.d:0 "激活开启空中优势科技"
+  unlockTech.event.air.3101.t:0 "开启战斗机扫荡科技"
+  unlockTech.event.air.3101.d:0 "激活开启战斗机扫荡科技"
+  unlockTech.event.air.3102.t:0 "开启缠斗经验科技"
+  unlockTech.event.air.3102.d:0 "激活开启缠斗经验科技"
+  unlockTech.event.air.3103.t:0 "开启夜间轰炸科技"
+  unlockTech.event.air.3103.d:0 "激活开启夜间轰炸科技"
+  unlockTech.event.air.3104.t:0 "开启日间轰炸科技"
+  unlockTech.event.air.3104.d:0 "激活开启日间轰炸科技"
 
   #编队飞行:   formation_flying
   unlockTech.event.air.3200.t:0 "开启编队飞行科技"

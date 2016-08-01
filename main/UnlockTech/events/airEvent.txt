@@ -19,13 +19,23 @@ country_event = {
 	}
 
 	#移除空中优势idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_air_air_superiority
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_air_superiority
+		}
 	}
 
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+			#如果科技已开启禁用确定按钮	
+			NOT = {
+				has_tech = air_superiority
+			}
+		}
+
 		set_technology = {
 			air_superiority = 1	
 		}
@@ -38,6 +48,212 @@ country_event = {
 	}
 
 }
+
+#战斗机扫荡:		fighter_sweeps
+country_event = {
+	id = unlockTech.event.air.3101
+	title = unlockTech.event.air.3101.t 
+	desc = unlockTech.event.air.3101.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除战斗机扫荡idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_fighter_sweeps
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		
+		trigger = {
+			
+			AND = {
+				#前导科技
+				#对舰攻击战术 naval_strike_tactics
+				has_tech = naval_strike_tactics
+				
+				#如果科技已开启禁用确定按钮	
+				NOT = {
+					has_tech = fighter_sweeps
+				}
+
+			} #AND
+			
+		}
+
+		set_technology = {
+			fighter_sweeps = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#缠斗经验:		dogfighting_experience
+country_event = {
+	id = unlockTech.event.air.3102
+	title = unlockTech.event.air.3102.t 
+	desc = unlockTech.event.air.3102.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除缠斗经验idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_dogfighting_experience
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		
+		trigger = {
+			
+			AND = {
+				#前导科技
+				#对舰攻击战术 naval_strike_tactics
+				has_tech = naval_strike_tactics
+				
+				#如果科技已开启禁用确定按钮	
+				NOT = {
+					has_tech = dogfighting_experience
+				}
+
+			} #AND
+			
+		}
+
+		set_technology = {
+			dogfighting_experience = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#夜间轰炸:		night_bombing
+country_event = {
+	id = unlockTech.event.air.3103
+	title = unlockTech.event.air.3103.t 
+	desc = unlockTech.event.air.3103.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除夜间轰炸idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_night_bombing
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		
+		trigger = {
+			
+			AND = {
+				#前导科技
+				#后勤轰炸 logistical_bombing
+				has_tech = logistical_bombing
+				
+				#如果科技已开启禁用确定按钮	
+				NOT = {
+					has_tech = night_bombing
+				}
+
+			} #AND
+			
+		}
+
+		set_technology = {
+			night_bombing = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+#日间轰炸:		day_bombing
+country_event = {
+	id = unlockTech.event.air.3104
+	title = unlockTech.event.air.3104.t 
+	desc = unlockTech.event.air.3104.d
+
+	is_triggered_only = yes
+	trigger = {
+		AI = NO
+	}
+
+	#移除日间轰炸idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_day_bombing
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+		
+		trigger = {
+			
+			AND = {
+				#前导科技
+				#后勤轰炸 logistical_bombing
+				has_tech = logistical_bombing
+				
+				#如果科技已开启禁用确定按钮	
+				NOT = {
+					has_tech = day_bombing
+				}
+
+			} #AND
+			
+		}
+
+		set_technology = {
+			day_bombing = 1
+		}
+		
+	}
+	
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+}
+
+
 
 
 #--------------------------编队飞行科技树--------------------------#
@@ -55,13 +271,23 @@ country_event = {
 	}
 
 	#移除编队飞行idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_air_formation_flying
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_formation_flying
+		}
 	}
 
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+			#如果科技已开启禁用确定按钮	
+			NOT = {
+				has_tech = formation_flying
+			}
+		}
+
 		set_technology = {
 			formation_flying = 1
 		}
@@ -91,13 +317,23 @@ country_event = {
 	}
 
 	#移除部队轮换idea
-	hidden_effect = { 
-		remove_ideas = unlockTech_air_force_rotation
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_air_force_rotation
+		}
 	}
 
 	#确定按钮及开启科技
 	option = {
 		name = unlockTech.event.common.a
+
+		trigger = {
+			#如果科技已开启禁用确定按钮	
+			NOT = {
+				has_tech = force_rotation
+			}
+		}
+
 		set_technology = {
 			force_rotation = 1
 		}
