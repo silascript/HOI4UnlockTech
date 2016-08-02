@@ -28,7 +28,18 @@ country_event = {
 
 		#前导科技
 		trigger = {
-			has_tech = basic_machine_tools
+
+			AND = {
+				#前导科技
+				#基础机床 basic_machine_tools	
+				has_tech = basic_machine_tools
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = concentrated_industry
+				}
+			} #AND
+
 		}
 
 		name = unlockTech.event.common.a
@@ -72,8 +83,18 @@ country_event = {
 		name = unlockTech.event.common.a
 
 		trigger = {
-			#前导科技
-			has_tech = basic_machine_tools	
+
+			AND = {
+				#前导科技
+				#基础机床 basic_machine_tools	
+				has_tech = basic_machine_tools
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = dispersed_industry
+				}
+			} #AND
+
 		}
 
 		set_technology = {
@@ -114,8 +135,18 @@ country_event = {
 		name = unlockTech.event.common.a
 
 		trigger = {
-			#前导科技
-			has_tech = assembly_line_production
+
+			AND = {
+				#前导科技
+				#流水线生产 assembly_line_production	
+				has_tech = assembly_line_production
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = streamlined_line
+				}
+			} #AND
+
 		}
 
 		set_technology = {
@@ -155,8 +186,18 @@ country_event = {
 		name = unlockTech.event.common.a
 
 		trigger = {
-			#前导科技
-			has_tech = assembly_line_production
+
+			AND = {
+				#前导科技
+				#流水线生产 assembly_line_production	
+				has_tech = assembly_line_production
+
+				#如果科技已开启禁用确定按钮
+				NOT = {
+					has_tech = flexible_line
+				}
+			} #AND
+
 		}
 
 		set_technology = {
