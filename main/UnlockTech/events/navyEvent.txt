@@ -12,7 +12,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+			is_ai = no
 	}
 
 	#移除存在舰队idea
@@ -57,7 +57,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+			is_ai = no
 	}
 
 	#移除贸易阻断idea
@@ -102,7 +102,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+			is_ai = no
 	}
 
 	#移除基地打击idea

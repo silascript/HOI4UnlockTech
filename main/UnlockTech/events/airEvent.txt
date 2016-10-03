@@ -15,7 +15,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+			is_ai = no
 	}
 
 	#移除空中优势idea
@@ -57,7 +57,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除战斗机扫荡idea
@@ -108,7 +108,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除缠斗经验idea
@@ -159,7 +159,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除夜间轰炸idea
@@ -210,7 +210,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除日间轰炸idea
@@ -267,7 +267,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+			is_ai = no
 	}
 
 	#移除编队飞行idea
@@ -309,7 +309,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除编队战斗idea
@@ -360,7 +360,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除战斗机王牌主导idea
@@ -416,7 +416,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+			is_ai = no
 	}
 
 	#移除部队轮换idea

@@ -21,7 +21,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除机动作战idea
@@ -67,7 +67,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 
@@ -119,7 +119,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 
@@ -173,7 +173,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 
@@ -224,7 +224,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 
@@ -278,7 +278,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除优势火力idea
@@ -322,7 +322,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-			AI = NO
+			is_ai = no
 	}
 
 	#移除分散支援idea
@@ -373,7 +373,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除协调支援idea
@@ -425,7 +425,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除集中火力计划idea
@@ -476,7 +476,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除集中火力管制idea
@@ -530,7 +530,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除堑壕战idea
@@ -573,7 +573,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除大规模机械化攻势idea
@@ -624,7 +624,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除步兵攻势idea
@@ -682,7 +682,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除人海突击idea
@@ -725,7 +725,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除宽大战线作战idea
@@ -776,7 +776,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		AI = NO
+		is_ai = no
 	}
 
 	#移除人民军队idea
