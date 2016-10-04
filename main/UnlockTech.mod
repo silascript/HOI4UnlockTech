@@ -3,4 +3,4 @@ path="mod/UnlockTech/"
 tags={
 	"Events"
 }
-supported_version="1.2.0"
+supported_version="1.2.1"
