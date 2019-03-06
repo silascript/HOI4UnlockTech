@@ -819,6 +819,115 @@ country_event = {
 }
 
 
+#--------------------------特种部队科技树--------------------------#
+
+# advanced_special_forces 先进特种部队训练
+country_event = {
+	id = unlockTech.event.land.1501
+	title = unlockTech.event.land.1501.t 
+	desc = unlockTech.event.land.1501.d
+
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	#移除先进特种部队idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_advanced_special_forces
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+	
+		trigger = {
+
+			AND = {
+				#前导科技
+				#特种部队 tech_special_forces
+				has_tech = tech_special_forces
+
+				#如果科技已开启禁用确定按钮
+				NOT ={
+					has_tech = 	advanced_special_forces
+				}
+
+			} #AND
+
+		}
+
+		# 开启科技
+		set_technology = {
+			advanced_special_forces = 1
+		}
+		
+	}
+
+
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+# improved_special_forces 扩大特种部队项目
+country_event = {
+	id = unlockTech.event.land.1502
+	title = unlockTech.event.land.1502.t 
+	desc = unlockTech.event.land.1502.d
+
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	#移除扩大特种部队idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_land_improved_special_forces
+		}
+	}
+
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+	
+		trigger = {
+
+			AND = {
+				#前导科技
+				#特种部队 tech_special_forces
+				has_tech = tech_special_forces
+
+				#如果科技已开启禁用确定按钮
+				NOT ={
+					has_tech = 	improved_special_forces
+				}
+
+			} #AND
+
+		}
+
+		# 开启扩大特种部队科技
+		set_technology = {
+			improved_special_forces = 1
+		}
+		
+	}
+
+
+
+	#放弃
+	option = {
+		name = unlockTech.event.common.b
+	}	
+
+}
 
 
 

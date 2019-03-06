@@ -13,6 +13,7 @@
   unlockTech_land_2:0 "开启陆军优势火力学说科技"
   unlockTech_land_3:0 "开启陆军决战计划学说科技"
   unlockTech_land_4:0 "开启陆军人海战术学说科技"
+  unlockTech_land_5:0 "开启特种部队科技"
 
   unlockTech_navy_1:0 "开启海军存在舰队学说科技"
   unlockTech_navy_2:0 "开启海军贸易阻断学说科技"
@@ -51,6 +52,8 @@
   unlockTech_land_peoples_army:0 "开启人民军队"
 
 
+  unlockTech_land_advanced_special_forces:0 "开启先进特种部队训练"
+  unlockTech_land_improved_special_forces:0 "开启扩大特种部队项目"
 
   # navy tech
   unlockTech_navy_fleet_in_being:0 "开启存在舰队"
@@ -124,6 +127,12 @@
   unlockTech.event.land.1401.d:0 "在宽大战线作战需要在长距离进行复数战斗单位间协同，并且协同重在战役层面而非战术层面。"
   unlockTech.event.land.1402.t:0 "开启人民军队科技"
   unlockTech.event.land.1402.d:0 "人民军队理论认为,战争中决定因素是人而非武器：调动积极性以弥补技术装备差距，并广泛赢得人民群众的支持。"
+
+
+  unlockTech.event.land.1501.t:0 "开启先进特种部队训练"
+  unlockTech.event.land.1501.d:0 "通过大量的训练，我们可以确保我们的特种部队能够表现地超越常人。"
+  unlockTech.event.land.1502.t:0 "开启扩大特种部队项目"
+  unlockTech.event.land.1502.d:0 "提高特种部队上限"
 
 
   # ------------------------ navy event ------------------------ #

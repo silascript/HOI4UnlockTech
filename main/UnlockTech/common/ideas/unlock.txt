@@ -179,6 +179,28 @@ ideas = {
 	} # unlockTech_land_4
 
 
+	#---------------------特种部队科技树---------------------#
+
+	unlockTech_land_5 ={
+		# advanced_special_forces:0 先进特种部队训练
+		unlockTech_land_advanced_special_forces ={
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1501
+			}
+		}
+
+
+		# improved_special_forces:1 扩大特种部队项目
+		unlockTech_land_improved_special_forces ={
+			picture = generic_infantry_bonus
+
+			on_add = {
+				country_event = unlockTech.event.land.1502
+			}
+		}
+	} # unlockTech_land_5
 ################################海军################################
 
 #---------------------海军存在舰队科技树---------------------#
