@@ -1,6 +1,7 @@
+version="8.0"
 name="UnlockTech"
 path="mod/UnlockTech/"
 tags={
-	"Events"
+	"Utilities"
 }
-supported_version="1.7.*"
+supported_version="1.8.*"
