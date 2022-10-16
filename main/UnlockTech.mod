@@ -1,7 +1,7 @@
-version="11.0"
+version="12.0"
 name="UnlockTech"
 path="mod/UnlockTech/"
 tags={
 	"Utilities"
 }
-supported_version="1.11.*"
+supported_version="1.12.*"
