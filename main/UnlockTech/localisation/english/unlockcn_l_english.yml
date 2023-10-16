@@ -1,14 +1,19 @@
-﻿l_english:
+﻿l_simp_chinese:
 
   ########################## idea Text ##########################
   
   #各支科技树标题
   #UnlockTech_idea:0 "开启科技"
+
+  # idea 栏 标题
+  # 一个idea栏中包括多个idea组 
   UnlockTech_Land_idea:0 "开启陆军科技"
   UnlockTech_Navy_idea:0 "开启海军科技"
   UnlockTech_Air_idea:0 "开启空军科技"
   UnlockTech_Industry_idea:0 "开启工业科技"
+  UnlockTech_Special_idea:0 "开启特种兵科技"
 
+  # idea 组 标题
   unlockTech_land_1:0 "开启陆军机动作战学说科技"
   unlockTech_land_2:0 "开启陆军优势火力学说科技"
   unlockTech_land_3:0 "开启陆军决战计划学说科技"
@@ -24,6 +29,11 @@
   unlockTech_air_3:0 "开启空军连续作战学说科技"
 
   unlockTech_industry_1:0 "开启工业科技"
+
+  unlockTech_mountaineers:0 "开启山地步兵科技"
+  unlockTech_marines:0 "开启海军陆战队科技"
+  unlockTech_paratroopers:0 "开启空降兵科技"
+
   
   
   #科技项标题

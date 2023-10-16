@@ -400,7 +400,95 @@ ideas = {
 		} #开启工业科技 unlockTech_industry_1
 
 	}
-################################################################
+
+##############################特种部队 1.13##################################
+
+#---------------------山地步兵学说树---------------------#
+
+	# 山地步兵学说idea组
+	unlockTech_mountaineers = {
+
+
+		# 重视山地步兵
+		# 此为山地步兵学说的根节点学说
+		unlockTech_mountaineers_root = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4100
+			}
+		}
+
+		# 寒冷天气专家：ski_troops
+		unlockTech_mountaineers_ski_troops = {
+			# picture = FRA_factory_strikes
+
+			# on_add = {
+			# 	country_event = unlockTech.event..
+			# }
+		}
+
+		# 崎岖地形专家：
+
+		# 守住防线：mountaineers_combat_1
+
+		# 山地火炮：mountaineers_combat_2
+
+		# 武装力量骨干：mountaineers_keystone_1
+
+		# 共享教官：mountaineers_keystone_2
+
+	} # unlockTech_mountaineers
+
+
+#---------------------海军陆战队学说树---------------------#
+
+	# 海军陆战队学说idea组
+	unlockTech_marines = {
+
+
+		# 重视海军陆战队
+		# 此为海军陆战队学说的根节点学说
+		unlockTech_marines_root = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4200
+			}
+		}
+
+		# 丛林专家：
+
+		# 滩头部队：
+
+		# 海军突击队：
+
+		# 远征单位：
+
+	} # unlockTech_marines
+
+#---------------------空降兵学说树---------------------#
+
+	# 空降兵学说idea组
+	unlockTech_paratroopers = {
+
+		# 重视空降兵
+		# 此为空降兵学说的根节点学说
+		unlockTech_paratroopers_root = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4300
+			}
+		}
+
+
+		# 侦察破袭：paras_dispersed_drop
+
+		# 战斗穿插：paras_combat_drop
+
+	} # unlockTech_paratroopers
+
 
 
 } 

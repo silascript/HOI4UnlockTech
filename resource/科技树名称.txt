@@ -128,4 +128,41 @@
 			*柔性生产线:			flexible_line
 
 	
+///////////////////////////////特种兵///////////////////////////////
+
+山地特种兵：
+	前导科技：tech_mountaineers "山地步兵 I"
+	重视山地步兵：special_forces_mountaineers
+	- 寒冷天气专家：ski_troops
+	- 崎岖地形专家：
+
+	战场情报：special_forces_recon
+	- 守住防线：mountaineers_combat_1
+	- 山地火炮：mountaineers_combat_2
+
+	协同作战训练：
+	- 武装力量骨干：mountaineers_keystone_1
+	- 共享教官：mountaineers_keystone_2
+
+海军陆战队：
+	前导科技：marines "海军陆战队 I"
+	重视海军陆战队：special_forces_marines
+	- 丛林专家：
+	- 滩头部队：
+
+	严苛训练方案：
+	- 海军突击队：
+	- 远征单位：
+
+ 
+空降兵:
+	前导科技：paratroopers "伞兵 I"
+	重视空降兵：special_forces_paratroopers
+	- 侦察破袭：paras_dispersed_drop
+	- 战斗穿插：paras_combat_drop
+
+	空降装甲：paras_airborne_light_armor
+	- 空降通讯：paras_combat_1
+	- 空降医疗分队：paras_combat_2
+
 

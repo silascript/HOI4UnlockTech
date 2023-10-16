@@ -1,0 +1,162 @@
+
+add_namespace = unlockTech.event.special
+
+
+############################## 特种部队 ##############################
+
+#--------------------------山地部队科技树--------------------------#
+
+
+# 重视山地步兵
+# 山地步兵学说的根节点学说
+country_event = {
+	id = unlockTech.event.special.4100
+	title = unlockTech.event.special.4100.t
+	desc = unlockTech.event.special.4100.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_mountaineers_root
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 已开启 山地步兵 I
+				has_tech = tech_mountaineers
+				NOT = {
+					# 重视山地步兵树没开启
+					has_tech = special_forces_mountaineers 
+				}
+			}# AND
+		}
+
+		set_technology = {
+			special_forces_mountaineers = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+
+#-------------------------海军陆战队科技树-------------------------#
+# 重视海军陆战队
+# 海军陆战队学说的根节点学说
+country_event = {
+	id = unlockTech.event.special.4200
+	title = unlockTech.event.special.4200.t
+	desc = unlockTech.event.special.4200.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_marines_root
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 已开启 海军陆战队 I
+				has_tech = marines
+				NOT = {
+					# 重视海军陆战队根学说没开启
+					has_tech = special_forces_marines 
+				}
+			}# AND
+		}
+
+		set_technology = {
+			special_forces_marines = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+
+#---------------------------空降兵科技树---------------------------#
+# 重视空降兵
+# 空降兵学说的根节点学说
+country_event = {
+	id = unlockTech.event.special.4300
+	title = unlockTech.event.special.4300.t
+	desc = unlockTech.event.special.4300.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_paratroopers_root
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 已开启 空降兵 I
+				has_tech = paratroopers
+				NOT = {
+					# 重视空降兵根学说没开启
+					has_tech = special_forces_paratroopers
+				}
+			}# AND
+		}
+
+		set_technology = {
+			special_forces_paratroopers = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+
+

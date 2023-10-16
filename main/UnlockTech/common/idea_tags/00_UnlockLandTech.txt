@@ -9,7 +9,7 @@ idea_categories = {
 		slot = unlockTech_land_2
 		slot = unlockTech_land_3
 		slot = unlockTech_land_4
-		slot = unlockTech_land_5
+		# slot = unlockTech_land_5
 
 		cost = 0
 		removal_cost = 0

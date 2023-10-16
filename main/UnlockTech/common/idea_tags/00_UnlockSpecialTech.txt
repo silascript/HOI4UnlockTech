@@ -1,0 +1,16 @@
+
+idea_categories = {
+    
+    # 特种兵学说
+	UnlockTech_Special_idea = {
+        
+        # 
+        # slot = 
+        slot = unlockTech_mountaineers
+        slot = unlockTech_marines
+        slot = unlockTech_paratroopers
+
+        cost = 0
+        removal_cost = 0
+    }
+}
