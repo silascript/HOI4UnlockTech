@@ -556,9 +556,9 @@ ideas = {
 		unlockTech_dispersed_drop = {
 			# picture = FRA_factory_strikes
 
-			# on_add = {
-			# 	country_event = unlockTech.event.special.4301
-			# }
+			on_add = {
+				country_event = unlockTech.event.special.4301
+			}
 		} # unlockTech_dispersed_drop
 
 		# 战斗穿插：paras_combat_drop
@@ -566,9 +566,9 @@ ideas = {
 		unlockTech_combat_drop = {
 			# picture = FRA_factory_strikes
 
-			# on_add = {
-			# 	country_event = unlockTech.event.special.4302
-			# }
+			on_add = {
+				country_event = unlockTech.event.special.4302
+			}
 		} # unlockTech_combat_drop
 
 
@@ -577,9 +577,9 @@ ideas = {
 		unlockTech_paras_combat_1 = {
 			# picture = FRA_factory_strikes
 
-			# on_add = {
-			# 	country_event = unlockTech.event.special.4303
-			# }
+			on_add = {
+				country_event = unlockTech.event.special.4303
+			}
 		} # unlockTech_paras_combat_1
 
 
@@ -588,9 +588,9 @@ ideas = {
 		unlockTech_paras_combat_2 = {
 			# picture = FRA_factory_strikes
 
-			# on_add = {
-			# 	country_event = unlockTech.event.special.4304
-			# }
+			on_add = {
+				country_event = unlockTech.event.special.4304
+			}
 		} # unlockTech_paras_combat_2
 
 	} # unlockTech_paratroopers

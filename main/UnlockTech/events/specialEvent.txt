@@ -618,7 +618,7 @@ country_event = {
         # 判断科技是否具备开启条件
 		trigger = {
 			AND = {
-				# 已开启 空降兵 I
+				# 前置科技 空降兵 已开启 I
 				has_tech = paratroopers
 				NOT = {
 					# 重视空降兵根学说没开启
@@ -641,5 +641,196 @@ country_event = {
 }
 
 
+# 侦察破袭：paras_dispersed_drop
+# 前置学说：重视空降兵：special_forces_paratroopers
+country_event = {
+	id = unlockTech.event.special.4301
+	title = unlockTech.event.special.4301.t
+	desc = unlockTech.event.special.4301.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_dispersed_drop
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 重视空降兵 已开启 I
+				has_tech = special_forces_paratroopers
+				NOT = {
+					# 侦察破袭 没开启
+					has_tech = paras_dispersed_drop
+				}
+			}# AND
+		}
+
+		set_technology = {
+			paras_dispersed_drop = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
 
 
+# 战斗穿插：paras_combat_drop
+# 前置学说：重视空降兵：special_forces_paratroopers
+country_event = {
+	id = unlockTech.event.special.4302
+	title = unlockTech.event.special.4302.t
+	desc = unlockTech.event.special.4302.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_combat_drop
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 重视空降兵 已开启 I
+				has_tech = special_forces_paratroopers
+				NOT = {
+					# 战斗穿插 没开启
+					has_tech = paras_combat_drop
+				}
+			}# AND
+		}
+
+		set_technology = {
+			paras_combat_drop = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+# 空降通讯：paras_combat_1
+# 前置学说：空降装甲：paras_airborne_light_armor
+country_event = {
+	id = unlockTech.event.special.4303
+	title = unlockTech.event.special.4303.t
+	desc = unlockTech.event.special.4303.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_paras_combat_1
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 空降装甲 已开启 I
+				has_tech = paras_airborne_light_armor
+				NOT = {
+					# 空降通讯 没开启
+					has_tech = paras_combat_1
+				}
+			}# AND
+		}
+
+		set_technology = {
+			paras_combat_1 = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+# 空降医疗分队：paras_combat_2
+# 前置学说：空降装甲：paras_airborne_light_armor
+country_event = {
+	id = unlockTech.event.special.4304
+	title = unlockTech.event.special.4304.t
+	desc = unlockTech.event.special.4304.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_paras_combat_2
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 空降装甲 已开启 I
+				has_tech = paras_airborne_light_armor
+				NOT = {
+					# 空降医疗分队 没开启
+					has_tech = paras_combat_2
+				}
+			}# AND
+		}
+
+		set_technology = {
+			paras_combat_2 = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
