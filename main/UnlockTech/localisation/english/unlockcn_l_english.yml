@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
 
-  ########################## idea Text ##########################
+  ############################# idea Text #############################
   
   #各支科技树标题
   #UnlockTech_idea:0 "开启科技"
@@ -13,12 +13,14 @@
   UnlockTech_Industry_idea:0 "开启工业科技"
   UnlockTech_Special_idea:0 "开启特种兵科技"
 
+ # --------------------------- idea组 --------------------------- #
+
   # idea 组 标题
-  unlockTech_land_1:0 "开启陆军机动作战学说科技"
-  unlockTech_land_2:0 "开启陆军优势火力学说科技"
-  unlockTech_land_3:0 "开启陆军决战计划学说科技"
-  unlockTech_land_4:0 "开启陆军人海战术学说科技"
-  unlockTech_land_5:0 "开启特种部队科技"
+  unlockTech_land_1:0 "开启陆军机动作战学说"
+  unlockTech_land_2:0 "开启陆军优势火力学说"
+  unlockTech_land_3:0 "开启陆军决战计划学说"
+  unlockTech_land_4:0 "开启陆军人海战术学说"
+  # unlockTech_land_5:0 "开启特种部队科技"
 
   unlockTech_navy_1:0 "开启海军存在舰队学说科技"
   unlockTech_navy_2:0 "开启海军贸易阻断学说科技"
@@ -30,9 +32,9 @@
 
   unlockTech_industry_1:0 "开启工业科技"
 
-  unlockTech_mountaineers:0 "开启山地步兵科技"
-  unlockTech_marines:0 "开启海军陆战队科技"
-  unlockTech_paratroopers:0 "开启空降兵科技"
+  unlockTech_mountaineers:0 "开启山地步兵学说"
+  unlockTech_marines:0 "开启海军陆战队学说"
+  unlockTech_paratroopers:0 "开启空降兵学说"
 
   
   
@@ -89,6 +91,29 @@
   unlockTech_dispersed_industry:0 "开启分散型工业"
   unlockTech_streamlined_line:0 "开启一体化生产线"
   unlockTech_flexible_line:0 "开启柔性生产线"
+
+
+  # special doctrine
+  unlockTech_mountaineers_root:0 "开启重视山地步兵学说"
+  unlockTech_mountaineers_ski_troops:0 "开启寒冷天气专家学说"
+  unlockTech_mountaineers_rangers:0 "开启崎岖地形专家学说"
+  unlockTech_mountaineers_combat_1:0 "开启守住防线学说"
+  unlockTech_mountaineers_combat_2:0 "开启山地火炮学说"
+  unlockTech_mountaineers_keystone_1:0 "开启武装力量骨干学说"
+  unlockTech_mountaineers_keystone_2:0 "开启共享教官"
+
+  unlockTech_marines_root:0 "开启重视海军陆战队学说"
+  unlockTech_marines_jungle_troops:0 "开启丛林专家学说"
+  unlockTech_marines_shore_parties:0 "开启滩头部队学说"
+  unlockTech_marines_commandoes:0 "开启海军突击队学说"
+  unlockTech_marines_expeditionary:0 "开启远征单位学说"
+
+  unlockTech_paratroopers_root:0 "开启重视空降兵学说"
+  unlockTech_dispersed_drop:0 "开启侦察破袭学说"
+  unlockTech_combat_drop:0 "开启战斗穿插学说"
+  unlockTech_paras_combat_1:0 "开启空降通讯学说"
+  unlockTech_paras_combat_2:0 "开启空降医疗分队学说"
+
 
   ########################## event Text ##########################
   unlockTech.event.common.a:0 "开启"
@@ -203,6 +228,46 @@
 
   unlockTech.event.industry.9103.t:0 "开启柔性生产线科技"
   unlockTech.event.industry.9103.d:0 "激活开启柔性生产线科技"
+
+  # ---------------------- special event ---------------------- #
+
+  unlockTech.event.special.4100.t:0 "开启重视山地步兵学说"
+  unlockTech.event.special.4100.d:0 "开启此学说需要山前置科技：山地步兵 I"
+  unlockTech.event.special.4101.t:0 "开启寒冷天气专家学说"
+  unlockTech.event.special.4101.d:0 "开启此学说需要开启前置学说：重视山地步兵学说"
+  unlockTech.event.special.4102.t:0 "开启崎岖地形专家学说"
+  unlockTech.event.special.4102.d:0 "开启此学说需要开启前置学说：重视山地步兵学说"
+  unlockTech.event.special.4103.t:0 "开启守住防线学说"
+  unlockTech.event.special.4103.d:0 "开启此学说需要开启前置学说：战场情报"
+  unlockTech.event.special.4104.t:0 "开启山地火炮学说"
+  unlockTech.event.special.4104.d:0 "开启此学说需要开启前置学说：战场情报"
+  unlockTech.event.special.4105.t:0 "开启武装力量骨干学说"
+  unlockTech.event.special.4105.d:0 "开启此学说需要开启前置学说：协同作战训练"
+  unlockTech.event.special.4106.t:0 "开启共享教官学说"
+  unlockTech.event.special.4106.d:0 "开启此学说需要开启前置学说：协同作战训练"
+
+  unlockTech.event.special.4200.t:0 "开启重视海军陆战队学说"
+  unlockTech.event.special.4200.d:0 "开启此学说需要前置科技：海军陆战队 I"
+  unlockTech.event.special.4201.t:0 "开启丛林专家学说"
+  unlockTech.event.special.4201.d:0 "开启此学说需要开启前置学说：重视海军陆战队学说"
+  unlockTech.event.special.4202.t:0 "开启滩头部队学说"
+  unlockTech.event.special.4202.d:0 "开启此学说需要开启前置学说：重视海军陆战队学说"
+  unlockTech.event.special.4203.t:0 "开启海军突击队学说"
+  unlockTech.event.special.4203.d:0 "开启此学说需要开启前置学说：严苛训练方案学说"
+  unlockTech.event.special.4204.t:0 "开启远征单位学说"
+  unlockTech.event.special.4204.d:0 "开启此学说需要开启前置学说：严苛训练方案学说"
+  
+  unlockTech.event.special.4300.t:0 "开启重视空降兵学说"
+  unlockTech.event.special.4300.d:0 "开启此学说需要开启前置科技：空降兵 I"
+  unlockTech.event.special.4301.t:0 "开启侦察破袭学说"
+  unlockTech.event.special.4301.d:0 "开启此学说需要开启前置学说：重视空降兵学说"
+  unlockTech.event.special.4302.t:0 "开启战斗穿插学说"
+  unlockTech.event.special.4302.d:0 "开启此学说需要开启前置学说：重视空降兵学说"
+  unlockTech.event.special.4303.t:0 "开启空降通讯学说"
+  unlockTech.event.special.4303.d:0 "开启此学说需要开启前置学说：空降装甲学说"
+  unlockTech.event.special.4304.t:0 "开启空降医疗分队学说"
+  unlockTech.event.special.4304.d:0 "开启此学说需要开启前置学说：空降装甲学说"
+  
 
 
   ########################## common Text ##########################
