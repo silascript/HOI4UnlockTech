@@ -181,26 +181,27 @@ ideas = {
 
 	#---------------------特种部队科技树---------------------#
 
-	unlockTech_land_5 ={
-		# advanced_special_forces:0 先进特种部队训练
-		unlockTech_land_advanced_special_forces ={
-			picture = generic_infantry_bonus
+	# unlockTech_land_5 ={
+	# 	# advanced_special_forces:0 先进特种部队训练
+	# 	unlockTech_land_advanced_special_forces ={
+	# 		picture = generic_infantry_bonus
 
-			on_add = {
-				country_event = unlockTech.event.land.1501
-			}
-		}
+	# 		on_add = {
+	# 			country_event = unlockTech.event.land.1501
+	# 		}
+	# 	}
 
 
-		# improved_special_forces:1 扩大特种部队项目
-		unlockTech_land_improved_special_forces ={
-			picture = generic_infantry_bonus
+	# 	# improved_special_forces:1 扩大特种部队项目
+	# 	unlockTech_land_improved_special_forces ={
+	# 		picture = generic_infantry_bonus
 
-			on_add = {
-				country_event = unlockTech.event.land.1502
-			}
-		}
-	} # unlockTech_land_5
+	# 		on_add = {
+	# 			country_event = unlockTech.event.land.1502
+	# 		}
+	# 	}
+	# } # unlockTech_land_5
+
 ################################海军################################
 
 #---------------------海军存在舰队科技树---------------------#
@@ -490,15 +491,47 @@ ideas = {
 			on_add = {
 				country_event = unlockTech.event.special.4200
 			}
-		}
+		} # unlockTech_marines_root
 
-		# 丛林专家：
+		# 丛林专家：marines_jungle_troops
+		# 前置学说：重视海军陆战队 special_forces_marines
+		unlockTech_marines_jungle_troops = {
+			# picture = FRA_factory_strikes
 
-		# 滩头部队：
+			on_add = {
+				country_event = unlockTech.event.special.4201
+			}
+		} # unlockTech_marines_jungle_troops
 
-		# 海军突击队：
+		# 滩头部队：marines_shore_parties
+		# 前置学说：重视海军陆战队 special_forces_marines
+		unlockTech_marines_shore_parties = {
+			# picture = FRA_factory_strikes
 
-		# 远征单位：
+			on_add = {
+				country_event = unlockTech.event.special.4202
+			}
+		} # unlockTech_marines_shore_parties
+
+		# 海军突击队：marines_commandoes
+		# 前置学说：严苛训练方案：marines_recon
+		unlockTech_marines_commandoes = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4203
+			}
+		} # unlockTech_marines_commandoes
+
+		# 远征单位：marines_expeditionary
+		# 前置学说：严苛训练方案：marines_recon
+		unlockTech_marines_expeditionary = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4204
+			}
+		} # unlockTech_marines_expeditionary
 
 	} # unlockTech_marines
 
@@ -515,12 +548,50 @@ ideas = {
 			on_add = {
 				country_event = unlockTech.event.special.4300
 			}
-		}
+		} # unlockTech_paratroopers_root
 
 
 		# 侦察破袭：paras_dispersed_drop
+		# 前置学说：重视空降兵：special_forces_paratroopers
+		unlockTech_dispersed_drop = {
+			# picture = FRA_factory_strikes
+
+			# on_add = {
+			# 	country_event = unlockTech.event.special.4301
+			# }
+		} # unlockTech_dispersed_drop
 
 		# 战斗穿插：paras_combat_drop
+		# 前置学说：重视空降兵：special_forces_paratroopers
+		unlockTech_combat_drop = {
+			# picture = FRA_factory_strikes
+
+			# on_add = {
+			# 	country_event = unlockTech.event.special.4302
+			# }
+		} # unlockTech_combat_drop
+
+
+		# 空降通讯：paras_combat_1
+		# 前置学说：空降装甲：paras_airborne_light_armor
+		unlockTech_paras_combat_1 = {
+			# picture = FRA_factory_strikes
+
+			# on_add = {
+			# 	country_event = unlockTech.event.special.4303
+			# }
+		} # unlockTech_paras_combat_1
+
+
+		# 空降医疗分队：paras_combat_2
+		# 前置学说：空降装甲：paras_airborne_light_armor
+		unlockTech_paras_combat_2 = {
+			# picture = FRA_factory_strikes
+
+			# on_add = {
+			# 	country_event = unlockTech.event.special.4304
+			# }
+		} # unlockTech_paras_combat_2
 
 	} # unlockTech_paratroopers
 

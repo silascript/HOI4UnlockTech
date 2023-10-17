@@ -397,19 +397,198 @@ country_event = {
 }
 
 
-#丛林专家：marines_jungle_troops
+# 丛林专家：marines_jungle_troops
 # 前置学说：重视海军陆战队：special_forces_marines
+country_event = {
+	id = unlockTech.event.special.4201
+	title = unlockTech.event.special.4201.t
+	desc = unlockTech.event.special.4201.d
 
-#滩头部队：marines_shore_parties
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_marines_jungle_troops
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 已开启前置学说 重视海军陆战队
+				has_tech = special_forces_marines
+				NOT = {
+					# 丛林专家 没开启
+					has_tech = marines_jungle_troops 
+				}
+			} # AND
+		}
+
+		set_technology = {
+			marines_jungle_troops = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+# 滩头部队：marines_shore_parties
 # 前置学说：重视海军陆战队：special_forces_marines
+country_event = {
+	id = unlockTech.event.special.4202
+	title = unlockTech.event.special.4202.t
+	desc = unlockTech.event.special.4202.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_marines_shore_parties
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 已开启 重视海军陆战队I
+				has_tech = special_forces_marines
+				NOT = {
+					# 滩头部队 没开启
+					has_tech = marines_shore_parties 
+				}
+			} # AND
+		}
+
+		set_technology = {
+			marines_shore_parties = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
 
 # 海军突击队：marines_commandoes
 # 前置学说：严苛训练方案：marines_recon
+country_event = {
+	id = unlockTech.event.special.4203
+	title = unlockTech.event.special.4203.t
+	desc = unlockTech.event.special.4203.d
 
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_marines_commandoes
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 严苛训练方案 已开启 
+				has_tech = marines_recon
+				NOT = {
+					# 海军突击队 没开启
+					has_tech = marines_commandoes 
+				}
+			} # AND
+		}
+
+		set_technology = {
+			marines_commandoes = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
 
 # 远征单位：marines_expeditionary
 # 前置学说：严苛训练方案：marines_recon
+country_event = {
+	id = unlockTech.event.special.4204
+	title = unlockTech.event.special.4204.t
+	desc = unlockTech.event.special.4204.d
 
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_marines_expeditionary
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 严苛训练方案 已开启 
+				has_tech = marines_recon
+				NOT = {
+					# 远征单位 没开启
+					has_tech = marines_expeditionary 
+				}
+			} # AND
+		}
+
+		set_technology = {
+			marines_expeditionary = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
 
 
 #---------------------------空降兵科技树---------------------------#
