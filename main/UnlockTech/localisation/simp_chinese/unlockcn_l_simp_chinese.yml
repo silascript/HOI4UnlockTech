@@ -95,6 +95,12 @@
 
   # special doctrine
   unlockTech_mountaineers_root:0 "开启重视山地步兵学说"
+  unlockTech_mountaineers_ski_troops:0 "开启寒冷天气专家学说"
+  unlockTech_mountaineers_rangers:0 "开启崎岖地形专家学说"
+  unlockTech_mountaineers_combat_1:0 "开启守住防线学说"
+  unlockTech_mountaineers_combat_2:0 "开启山地火炮学说"
+  unlockTech_mountaineers_keystone_1:0 "开启武装力量骨干学说"
+  unlockTech_mountaineers_keystone_2:0 "开启共享教官"
 
   unlockTech_marines_root:0 "开启重视海军陆战队学说"
 
@@ -219,6 +225,18 @@
 
   unlockTech.event.special.4100.t:0 "开启山地步兵学说"
   unlockTech.event.special.4100.d:0 "开启山地步兵学说"
+  unlockTech.event.special.4101.t:0 "开启寒冷天气专家学说"
+  unlockTech.event.special.4101.d:0 "开启寒冷天气专家学说\n开启此学说需要开启前置学说：重视山地步兵学说"
+  unlockTech.event.special.4102.t:0 "开启崎岖地形专家学说"
+  unlockTech.event.special.4102.d:0 "开启崎岖地形专家学说\n开启此学说需要开启前置学说：重视山地步兵学说"
+  unlockTech.event.special.4103.t:0 "开启守住防线学说"
+  unlockTech.event.special.4103.d:0 "开启守住防线学说\n开启此学说需要开启前置学说：战场情报"
+  unlockTech.event.special.4104.t:0 "开启山地火炮学说"
+  unlockTech.event.special.4104.d:0 "开启山地火炮学说\n开启此学说需要开启前置学说：战场情报"
+  unlockTech.event.special.4105.t:0 "开启武装力量骨干学说"
+  unlockTech.event.special.4105.d:0 "开启武装力量骨干学说\n开启此学说需要开启前置学说：协同作战训练"
+  unlockTech.event.special.4106.t:0 "开启共享教官学说"
+  unlockTech.event.special.4106.d:0 "开启共享教官学说\n开启此学说需要开启前置学说：协同作战训练"
 
   unlockTech.event.special.4200.t:0 "开启海军陆战队学说"
   unlockTech.event.special.4200.d:0 "开启海军陆战队学说"

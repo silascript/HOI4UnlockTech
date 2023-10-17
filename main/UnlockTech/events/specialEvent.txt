@@ -9,6 +9,7 @@ add_namespace = unlockTech.event.special
 
 # 重视山地步兵
 # 山地步兵学说的根节点学说
+# 前置科技：tech_mountaineers "山地步兵 I"
 country_event = {
 	id = unlockTech.event.special.4100
 	title = unlockTech.event.special.4100.t
@@ -56,6 +57,295 @@ country_event = {
 }
 
 
+# 寒冷天气专家：ski_troops
+# 前置学说：重视山地步兵：special_forces_mountaineers
+country_event = {
+	id = unlockTech.event.special.4101
+	title = unlockTech.event.special.4101.t
+	desc = unlockTech.event.special.4101.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_mountaineers_ski_troops
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 重视山地步兵 已开启  I
+				has_tech = special_forces_mountaineers
+				NOT = {
+					# 寒冷天气专家 没开启
+					has_tech = ski_troops
+				}
+			} # AND
+		}
+
+		set_technology = {
+			ski_troops = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+# 崎岖地形专家：rangers
+# 前置学说：重视山地步兵：special_forces_mountaineers
+country_event = {
+	id = unlockTech.event.special.4102
+	title = unlockTech.event.special.4102.t
+	desc = unlockTech.event.special.4102.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_mountaineers_rangers
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 重视山地步兵 已开启  I
+				has_tech = special_forces_mountaineers
+				NOT = {
+					# 崎岖地形专家 没开启
+					has_tech = rangers
+				}
+			} # AND
+		}
+
+		set_technology = {
+			rangers = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+# 守住防线：mountaineers_combat_1
+# 前置学说：战场情报：special_forces_recon
+country_event = {
+	id = unlockTech.event.special.4103
+	title = unlockTech.event.special.4103.t
+	desc = unlockTech.event.special.4103.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_mountaineers_combat_1
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 战场情报 已开启  I
+				has_tech = special_forces_recon 
+				NOT = {
+					# 守住防线 没开启
+					has_tech = mountaineers_combat_1
+				}
+			} # AND
+		}
+
+		set_technology = {
+			mountaineers_combat_1 = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+# 山地火炮：mountaineers_combat_2
+# 前置学说：战场情报：special_forces_recon
+country_event = {
+	id = unlockTech.event.special.4104
+	title = unlockTech.event.special.4104.t
+	desc = unlockTech.event.special.4104.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_mountaineers_combat_2
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 战场情报 已开启  I
+				has_tech = special_forces_recon 
+				NOT = {
+					# 山地火炮 没开启
+					has_tech = mountaineers_combat_2
+				}
+			} # AND
+		}
+
+		set_technology = {
+			mountaineers_combat_2 = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+# 武装力量骨干：mountaineers_keystone_1
+# 前置学说：协同作战训练：mountaineers_combat_3
+country_event = {
+	id = unlockTech.event.special.4105
+	title = unlockTech.event.special.4105.t
+	desc = unlockTech.event.special.4105.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_mountaineers_keystone_1
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 协同作战训练 已开启  I
+				has_tech =  mountaineers_combat_3
+				NOT = {
+					# 武装力量骨干 没开启
+					has_tech = mountaineers_keystone_1
+				}
+			} # AND
+		}
+
+		set_technology = {
+			mountaineers_keystone_1 = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
+
+
+# 共享教官：mountaineers_keystone_2
+# 前置学说：协同作战训练：mountaineers_combat_3
+country_event = {
+	id = unlockTech.event.special.4106
+	title = unlockTech.event.special.4106.t
+	desc = unlockTech.event.special.4106.d
+
+	is_triggered_only = yes
+	trigger = {
+			is_ai = no
+	}
+
+	#移除idea
+	immediate = {
+		hidden_effect = { 
+			remove_ideas = unlockTech_mountaineers_keystone_2
+		}
+	}
+
+	#确定按钮及开启科技
+	option = {
+		name = unlockTech.event.common.a
+
+        # 判断科技是否具备开启条件
+		trigger = {
+			AND = {
+				# 前置学说 协同作战训练 已开启  I
+				has_tech =  mountaineers_combat_3
+				NOT = {
+					# 共享教官 没开启
+					has_tech = mountaineers_keystone_2
+				}
+			} # AND
+		}
+
+		set_technology = {
+			mountaineers_keystone_2 = 1	
+		}
+		
+	}
+
+	#放弃	
+	option = {
+		name = unlockTech.event.common.b
+	}
+
+}
 
 #-------------------------海军陆战队科技树-------------------------#
 # 重视海军陆战队
@@ -105,6 +395,20 @@ country_event = {
 	}
 
 }
+
+
+#丛林专家：marines_jungle_troops
+# 前置学说：重视海军陆战队：special_forces_marines
+
+#滩头部队：marines_shore_parties
+# 前置学说：重视海军陆战队：special_forces_marines
+
+# 海军突击队：marines_commandoes
+# 前置学说：严苛训练方案：marines_recon
+
+
+# 远征单位：marines_expeditionary
+# 前置学说：严苛训练方案：marines_recon
 
 
 

@@ -134,25 +134,25 @@
 	前导科技：tech_mountaineers "山地步兵 I"
 	重视山地步兵：special_forces_mountaineers
 	- 寒冷天气专家：ski_troops
-	- 崎岖地形专家：
+	- 崎岖地形专家：rangers
 
 	战场情报：special_forces_recon
 	- 守住防线：mountaineers_combat_1
 	- 山地火炮：mountaineers_combat_2
 
-	协同作战训练：
+	协同作战训练：mountaineers_combat_3
 	- 武装力量骨干：mountaineers_keystone_1
 	- 共享教官：mountaineers_keystone_2
 
 海军陆战队：
 	前导科技：marines "海军陆战队 I"
 	重视海军陆战队：special_forces_marines
-	- 丛林专家：
-	- 滩头部队：
+	- 丛林专家：marines_jungle_troops
+	- 滩头部队：marines_shore_parties
 
-	严苛训练方案：
-	- 海军突击队：
-	- 远征单位：
+	严苛训练方案：marines_recon
+	- 海军突击队：marines_commandoes
+	- 远征单位：marines_expeditionary
 
  
 空降兵:

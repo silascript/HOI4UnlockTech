@@ -423,20 +423,55 @@ ideas = {
 		unlockTech_mountaineers_ski_troops = {
 			# picture = FRA_factory_strikes
 
-			# on_add = {
-			# 	country_event = unlockTech.event..
-			# }
+			on_add = {
+				country_event = unlockTech.event.special.4101
+			}
 		}
 
-		# 崎岖地形专家：
+		# 崎岖地形专家：rangers
+		unlockTech_mountaineers_rangers = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4102
+			}
+		}
 
 		# 守住防线：mountaineers_combat_1
+		unlockTech_mountaineers_combat_1 = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4103
+			}
+		}
 
 		# 山地火炮：mountaineers_combat_2
+		unlockTech_mountaineers_combat_2 = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4104
+			}
+		}
 
 		# 武装力量骨干：mountaineers_keystone_1
+		unlockTech_mountaineers_keystone_1 = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4105
+			}
+		}
 
 		# 共享教官：mountaineers_keystone_2
+		unlockTech_mountaineers_keystone_2 = {
+			# picture = FRA_factory_strikes
+
+			on_add = {
+				country_event = unlockTech.event.special.4106
+			}
+		}
 
 	} # unlockTech_mountaineers
 
