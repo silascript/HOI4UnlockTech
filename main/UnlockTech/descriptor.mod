@@ -1,6 +1,6 @@
-version="17.0"
+version="19.0"
 tags={
 	"Utilities"
 }
 name="UnlockTech"
-supported_version="1.17.*"
+supported_version="1.19.*"
